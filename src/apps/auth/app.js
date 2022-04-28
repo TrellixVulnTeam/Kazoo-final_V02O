@@ -851,7 +851,7 @@ define(function(require) {
 					if (monster.config.whitelabel.hasOwnProperty('logoPath') && monster.config.whitelabel.logoPath.length) {
 						fillLogo(monster.config.whitelabel.logoPath);
 					} else {
-						fillLogo('apps/auth/style/static/images/logo.svg');
+						fillLogo('apps/auth/style/static/images/Interfone-Logo-2020.jpg');
 					}
 
 					callback();

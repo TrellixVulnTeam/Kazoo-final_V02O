@@ -152,7 +152,9 @@ body {
             flex-shrink: 0;
             min-width: 0;
             padding: 0;
-            border: 0; }
+            border: 0;
+            font-weight: 700;
+           }
             body .core-wrapper .core-topbar-wrapper .core-topbar .main-links #main_topbar_current_app #main_topbar_current_app_icon {
               flex-shrink: 0;
               min-width: 32px;
