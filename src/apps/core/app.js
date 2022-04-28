@@ -578,7 +578,7 @@ define(function(require) {
 					if (monster.config.whitelabel.hasOwnProperty('logoPath') && monster.config.whitelabel.logoPath.length) {
 						fillLogo(monster.config.whitelabel.logoPath);
 					} else {
-						fillLogo('apps/core/style/static/images/logo.svg');
+						fillLogo('apps/core/style/static/images/Interfone-Logo.jpg');
 					}
 				}
 			});

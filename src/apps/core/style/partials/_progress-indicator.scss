@@ -4,7 +4,7 @@
 	height: 5px;
 	display: block;
 	width: 100%;
-	background-color: $primary-color;
+	background-color: #0b559f;
 	background-clip: padding-box;
 	overflow: hidden;
 
@@ -14,7 +14,7 @@
 		background-color: #303039;
 
 		.indeterminate {
-			background-color: $primary-color;
+			background-color: #0b559f;
 
 			&:before {
 				content: '';

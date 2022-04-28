@@ -185,9 +185,9 @@ h1 {
 	}
 }
 .monster-button-success {
-	color: darken($success-color, 30%);
+	color: #fff;
 	border-color: darken($success-color, 20%);
-	background: $success-color;
+	background: #0b559f;
 	&.dropdown-toggle {
 		min-width: 20px;
 		.caret {
@@ -851,13 +851,14 @@ label.monster-radio-large > i::after {
 /************************************************************/
 
 .container-menu {
-	max-width: 1024px;
+	max-width: 100%;
 	margin: auto;
 }
 .container-menu > .left-menu {
 	float: left;
-	width: 179px;
-	margin: 5px 10px 0 11px;
+	width: 242px;
+	//margin: 5px 10px 0 11px;
+	margin: 0px;
 }
 .container-menu > .left-menu .category {
 	font-size: 18px;
@@ -867,29 +868,31 @@ label.monster-radio-large > i::after {
 	height: 30px;
 	padding: 15px 5px;
 	cursor: pointer;
-	color: #555;
-	border: 1px solid #dcdcdc;
-	border-radius: 2px;
-	background: #f6f6f6;
-	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	color: #84939a;
+	//border: 1px solid #dcdcdc;
+	border: 0px !important;
+//	border-radius: 2px;
+	background: #34474e;
+	/*background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:    -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:     -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:      -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
-	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);*/
 }
 .container-menu > .left-menu .category.loading {
 	opacity: 0.5;
 	cursor: default;
 }
 .container-menu > .left-menu .category:hover {
-	background: #eee;
+	background: #dc1a59;
+	color: #fff;
 }
 .container-menu > .left-menu .category.active,
 .container-menu > .left-menu .category.selected {
 	position: relative;
 	color: #fff;
-	background: $primary-color;
-	border: 1px solid $primary-color;
+	background: #dc1a59;
+	border: 1px solid #dc1a59;
 }
 .container-menu > .left-menu .category.active::after {
 	position: absolute;
@@ -899,7 +902,7 @@ label.monster-radio-large > i::after {
 	content: '';
 	border-top: 9px solid transparent;
 	border-bottom: 9px solid transparent;
-	border-left: 9px solid $primary-color;
+	border-left: 9px solid #dc1a59;
 }
 .container-menu > .left-menu .category.active .title i,
 .container-menu > .left-menu .category.selected .title i {
@@ -907,6 +910,9 @@ label.monster-radio-large > i::after {
 }
 .container-menu > .left-menu .category.simple {
 	margin: 10px auto 0 auto;
+}
+.container-menu > .left-menu > .category.simple {
+	margin: 0px auto 0 auto;
 }
 .container-menu > .left-menu .category .title {
 	font-size: 16px;
@@ -920,10 +926,15 @@ label.monster-radio-large > i::after {
 }
 .container-menu > .left-menu .category .title i {
 	margin: 0 8px 0 4px;
-	color: #555;
+	color: #84939a;
 }
+.container-menu > .left-menu .category:hover .title i {
+	margin: 0 8px 0 4px;
+	color: #fff;
+}
+
 .container-menu > .left-menu .category-group {
-	margin-top: 20px;
+	margin-top: 0px !important;
 }
 .container-menu > .left-menu .category-group .category {
 	border-top: 0;
@@ -938,27 +949,31 @@ label.monster-radio-large > i::after {
 	width: 100%;
 	height: 100%;
 	content: '';
-	border-top: 1px solid #fff;
+	//border-top: 1px solid #fff;
+	border-top: 0px;
 }
 .container-menu > .left-menu .category-group .category:not(:first-child):hover::before {
-	border-top: 1px solid #eee;
+	//border-top: 1px solid #eee;
+	border-top: 0px;
 }
 .container-menu > .left-menu .category-group .category.active:not(:first-child)::before {
-	border-top: 1px solid $primary-color;
+	//border-top: 1px solid $primary-color;
+	border-top: 0px;
 }
 .container-menu > .left-menu .category-group .category:first-child {
-	border: 1px solid #dcdcdc;
-	border-radius: 2px 2px 0 0;
+	//border: 1px solid #dcdcdc;
+	border: 0px;
+	//border-radius: 2px 2px 0 0;
 }
 .container-menu > .left-menu .category-group .category:last-child {
-	border-radius: 0 0 2px 2px;
+	//border-radius: 0 0 2px 2px;
 }
 .container-menu > .left-menu .category .title i.larger-margin {
 	margin-right: 12px;
 }
 .container-menu .right-content {
 	margin-bottom: 20px;
-	margin-left: 201px;
+	margin-left: 242px;
 	padding: 15px 15px 0;
 }
 .container-menu .right-content > * {
@@ -1151,7 +1166,7 @@ label.monster-radio-large > i::after {
 /************************************************************/
 
 .monster-primary-color {
-	color: $primary-color !important;
+	color: #0b559f !important;
 }
 
 .monster-white {

@@ -305,10 +305,10 @@
   margin-left: 10px; }
 
 #voip_container .left-menu #myOffice {
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 #voip_container .left-menu > div {
-  margin-top: 10px; }
+  margin-top: 0px; }
 
 #voip_container .right-content #strategy_container .clearfix:after {
   clear: right; }

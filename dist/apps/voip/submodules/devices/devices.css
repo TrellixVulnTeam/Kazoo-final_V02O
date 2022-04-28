@@ -366,7 +366,7 @@
 
 .voip-edit-device-popup .edit-device .tabs-section[data-section="comboKeys"] .control-group {
   padding: 1rem;
-  box-shadow: inset 0px 1px 0px 0px #DBDBDE, inset 0px -1px 0px 0px #DBDBDE; }
+  box-shadow: inset 0px 1px 0px 0px #DBDBDE, inset 0px -1px 0px 0px #DBDBDE; }
   .voip-edit-device-popup .edit-device .tabs-section[data-section="comboKeys"] .control-group.placeholder {
     height: 91px; }
   .voip-edit-device-popup .edit-device .tabs-section[data-section="comboKeys"] .control-group.warning {
