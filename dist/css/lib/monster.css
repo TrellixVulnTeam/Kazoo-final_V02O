@@ -759,12 +759,15 @@ label.monster-radio-large > i::after {
 /************************************************************/
 .container-menu {
   max-width: 100%;
-  margin: auto; }
+  margin: auto;
+  background-color: #f0f1f6; }
 
 .container-menu > .left-menu {
   float: left;
   width: 242px;
-  margin: 0px; }
+  height: 900px;
+  margin: 0px;
+  background-color: #34474e; }
 
 .container-menu > .left-menu .category {
   font-size: 18px;
@@ -867,7 +870,6 @@ label.monster-radio-large > i::after {
   margin-right: 12px; }
 
 .container-menu .right-content {
-  margin-bottom: 20px;
   margin-left: 242px;
   padding: 15px 15px 0; }
 

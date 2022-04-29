@@ -832,7 +832,7 @@
 
 	"myOffice": {
 		"topBarLinks": {
-			"callerID": "Caller ID",
+			"callerID": "ID d'appel",
 			"musicOnHold": "Musique d'attente",
 			"callRecording": "Enregistrement",
 			"hours": "Heures"
@@ -847,9 +847,9 @@
 			"fileTooBigAlert": "Vous ne pouvez pas uploader un fichier de taille excédant 5MB"
 		},
 		"callerId": {
-			"title": "Caller ID d'entreprise",
+			"title": "ID d'appel de I'entreprise",
 			"headline": "Sélectionner un numéro de Caller ID Number pour ce compte",
-			"numberLabel": "Numéro de Caller ID de l'entreprise",
+			"numberLabel": "ID d'appel",
 			"numberHelp": "Ce numéro sera affiché lors des appels sortants. 15 caractères maximum (espaces inclus).",
 			"nameLabel": "Nom du Caller-ID de l'entreprise",
 			"nameHelp": "Ce nom sera affiché si possible lors des appels sortants.",
@@ -878,7 +878,7 @@
 		"totalNumbers": "Total Numéros",
 		"unregisteredDevices": "Téléphones non-connectés",
 		"accountId": "ID Compte:",
-		"accountRealm": "Royaume du compte:",
+		"accountRealm": "Domaine:",
 		"numberChartLegend": {
 			"assigned": "Numéros assignés",
 			"spare": "Numéros assignés",
