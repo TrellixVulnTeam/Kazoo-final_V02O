@@ -3,7 +3,7 @@
 	height: 62px;
 
 	.open .links {
-		background-color: $woodsmoke;
+		background-color: #dc1a59;
 		color: $white;
 
 		i, svg {
@@ -14,14 +14,14 @@
 		display: flex;
 		align-items: center;
 		height: 100%;
-		color: $french-gray2;
+		color: #fff;
 		background-color: transparent;
-		border-left: 1px solid $tuna;
+		border-left: 1px solid #0b559f;
 
 		&:hover,
 		&:focus {
 			cursor: pointer;
-			background-color: $woodsmoke;
+			background-color: #0b559f;
 		}
 
 		i {
@@ -29,7 +29,7 @@
 		}
 
 		i, svg {
-			color: $french-gray;
+			color: #fff;
 			width: 16px;
 			height: 16px;
 		}
@@ -59,7 +59,7 @@
 		height: 100%;
 		padding: 0 10px;
 		background: no-repeat center center;
-		border-right: 1px solid $woodsmoke;
+		border-right: 1px solid #fff;
 	}
 	.main-links {
 		display: flex;
@@ -152,7 +152,7 @@
 		align-items: center;
 		width: 38px;
 		height: 38px;
-		background-color: $manatee;
+		background-color: #dc1a59;
 		border-radius: 50%;
 		color: white;
 		font-size: 18px;
@@ -166,7 +166,7 @@
 		padding-left: 12px;
 	}
 	#main_topbar_myaccount_user {
-		color: $mischka;
+		color: #fff;
 		font-size: 16px;
 		font-weight: 600;
 	}
@@ -283,7 +283,7 @@
 		#main_topbar_account_toggle_container {
 			.account-toggle-header {
 				background: $shark;
-				color: $french-gray;
+				color: #fff;
 				padding: 10px 12px 0px 12px;
 				position: relative;
 				width: 198px;
@@ -292,7 +292,7 @@
 					font-size: 12px;
 				}
 				.current-account-container {
-					color: $primary-color;
+					color: #0b559f;
 
 					.missing-info {
 						color: $manatee;
@@ -352,8 +352,8 @@
 					border-color: $shark;
 
 					& > div {
-						background: $tuna;
-						color: $french-gray;
+						background: #202029;
+						color: #fff;
 						border-color: $shark;
 					}
 

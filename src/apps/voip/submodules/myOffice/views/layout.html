@@ -16,6 +16,7 @@
 	{{#if isCnamEnabled}}
 		<a href="#" class="header-link caller-id{{#compare mainNumbers.length "===" 0}} disabled{{/compare}}">
 			<div class="header-link-icon"><i class="monster-white fa-lg fa fa-user"></i></div>
+			<!-- <div class="header-link-title">{{i18n.myOffice.topBarLinks.callerID}}</div> -->
 			<div class="header-link-title">{{i18n.myOffice.topBarLinks.callerID}}</div>
 		</a>
 	{{/if}}
@@ -201,7 +202,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="chart-container clearfix">
+				
+			<!----		<div class="chart-container clearfix">
 						<div class="numbers-canvas-wrapper">
 							<canvas id="dashboard_number_types_chart"></canvas>
 						</div>
@@ -219,24 +221,27 @@
 							</ul>
 						</div>
 					</div>
+				--->
 				</div>
 				<!-- <div class="dashboard-box-row">
 					<div class="row-label">Download Phone System Manual</div>
 					<div class="row-link pull-right"><a href="#">Print</a></div>
 				</div> -->
-				<div class="dashboard-box-row account-info-box">
+				<!-- <div class="dashboard-box-row account-info-box">
 					<div class="row-label">{{i18n.myOffice.directoryLabel}}</div>
 					<div class="row-value">{{directoryUsers}}</div>
 					{{#if directoryLink}}
 					<div class="row-link pull-right"><a href="{{directoryLink}}" target="_blank"><i class="fa fa-download monster-blue"></i> {{i18n.download}}</a></div>
 					{{/if}}
 				</div>
+				 -->
 				<div class="dashboard-box-row account-info-box">
 					<div class="row-label">{{i18n.myOffice.accountId}}</div>
 					<div class="row-value">{{account.id}}</div>
 				</div>
 				<div class="dashboard-box-row account-info-box">
-					<div class="row-label">{{i18n.myOffice.accountRealm}}</div>
+				<!----	<div class="row-label">{{i18n.myOffice.accountRealm}}</div> -->
+				<div class="row-label">{{i18n.myOffice.accountRealm}}</div>
 					<div class="row-value">{{account.realm}}</div>
 				</div>
 			</div>
