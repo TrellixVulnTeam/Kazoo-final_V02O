@@ -399,7 +399,7 @@ h1 {
 /************************************************************/
 input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
 	box-shadow: none;
-	border-color: $primary-color;
+	border-color: #0b559f;
 }
 label[class*='monster-checkbox'],
 label[class*='monster-radio'] {
@@ -435,7 +435,7 @@ label[class*='monster-radio'] {
 	}
 	& > input:checked ~ i {
 		border: 1px solid #006bca;
-		background: $primary-color;
+		background: #0b559f;
 
 		&::after {
 			opacity: 1;
@@ -853,12 +853,15 @@ label.monster-radio-large > i::after {
 .container-menu {
 	max-width: 100%;
 	margin: auto;
+	background-color: #f0f1f6;
 }
 .container-menu > .left-menu {
 	float: left;
 	width: 242px;
 	//margin: 5px 10px 0 11px;
+	height: 900px;
 	margin: 0px;
+	background-color: #34474e;
 }
 .container-menu > .left-menu .category {
 	font-size: 18px;
@@ -972,7 +975,7 @@ label.monster-radio-large > i::after {
 	margin-right: 12px;
 }
 .container-menu .right-content {
-	margin-bottom: 20px;
+//	margin-bottom: 20px;
 	margin-left: 242px;
 	padding: 15px 15px 0;
 }
