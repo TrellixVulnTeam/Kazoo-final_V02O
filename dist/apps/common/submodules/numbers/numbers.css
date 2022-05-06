@@ -413,3 +413,9 @@
 
 #numbers_add_external .customize-number-field {
   margin-top: 5px; }
+
+div.number-options .navbar .nav.pull-right li ul li > a.rename-carrier-number {
+  display: none; }
+
+div.number-options .navbar .nav.pull-right li ul li > a.sync-number {
+  display: none; }

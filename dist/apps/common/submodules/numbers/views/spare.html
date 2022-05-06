@@ -1,6 +1,6 @@
 <div id="actions_wrapper_spare" class="actions-wrapper">
 	<div class="form-inline">
-		<label>{{ i18n.numbers.numbers }}</label>
+<!----		<label>{{ i18n.numbers.numbers }}</label>
 
 		<span id="trigger_links">
 			<a href="#" id="delete_numbers" class="action-number"><i class="fa fa-times monster-red"></i><span class="action-text">{{ i18n.numbers.deleteNumbers }}</span></a>
@@ -21,9 +21,9 @@
 					<a href="#" id="buy_numbers" class="dropdown-toggle buy-dropdown action-number" data-toggle="dropdown" data-target="#"><i class="fa fa-shopping-cart monster-green"></i><span class="action-text">{{ @root.i18n.numbers.buy }}</span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a class="buy-numbers-link" data-type="regular" href="#">{{@root.i18n.numbers.buyNumberLinks.regular}}</a></li>
-						<li><a class="buy-numbers-link" data-type="tollfree" href="#">{{@root.i18n.numbers.buyNumberLinks.tollfree}}</a></li>
+						<li><a class="buy-numbers-link" data-type="tollfree" href="#">{{@root.i18n.numbers.buyNumberLinks.tollfree}}</a></li>-->
 						<!-- <li><a class="buy-numbers-link" data-type="vanity" href="#">{{@root.i18n.numbers.buyNumberLinks.vanity}}</a></li> -->
-					</ul>
+					<!--</ul>
 				</li>
 			</ul>
 			{{/unless}}
@@ -32,7 +32,7 @@
 			{{/unless}}
 			<a href="#" id="sync_numbers" class="action-number sync help-popover" data-original-title="{{ @root.i18n.numbers.sync.help }}" data-placement="top" data-toggle="tooltip"><i class="fa fa-refresh monster-orange"></i><span class="action-text">{{ @root.i18n.numbers.sync.label }}</span></a>
 		{{/compare}}
-
+		-->
 		<div class="input-append pull-right search-custom">
 			<input class="span2" type="text" placeholder="{{ i18n.numbers.searchNumbers }}"/>
 			<button class="monster-button monster-button-success non-fixed search-numbers" type="button">{{ i18n.numbers.go }}</button>
@@ -82,12 +82,13 @@
 						<div class="number-options pull-right"></div>
 						<input type="checkbox"></input>
 						<div class="phone-number monster-phone-number" data-state="{{this.state}}"{{#compare this.state "!==" "in_service"}} data-toggle="tooltip" data-placement="top" data-original-title="{{ formatVariableToDisplay this.state }}"{{/compare}}>{{#monsterNumberWrapper this.phoneNumber}}{{/monsterNumberWrapper}}</div>
-						<div class="features pull-right">
+<!---							<div class="features pull-right">
 							{{#numberFeatures features}}{{/numberFeatures}}
 							{{#compare this.state '===' 'port_in'}}
 								<i class="fa fa-exclamation-triangle monster-red active help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{@root.i18n.numbers.portIconHelp}}"></i>
 							{{/compare}}
 						</div>
+					-->
 					</div>
 				{{else}}
 					<div class="number-box no-data">

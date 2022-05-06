@@ -809,3 +809,6 @@
     padding-bottom: 15px; }
     .monster-feature-popup-container[data-feature="vmbox"] .content .extra-content.disabled {
       display: none; }
+
+#outbound_privacy > option[value=name] {
+  display: none; }
