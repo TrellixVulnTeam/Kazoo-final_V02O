@@ -24,7 +24,7 @@
 
 	<div class="dashboard-content">
 		{{#if topMessage}}
-		<div class="dashboard-top-message {{topMessage.cssClass}} link-box" data-category="{{topMessage.category}}" data-subcategory="{{topMessage.subcategory}}">
+		<div class="dashboard-top-message link-box" data-category="{{topMessage.category}}" data-subcategory="{{topMessage.subcategory}}">
 			<i class="fa fa-exclamation-triangle"></i>{{topMessage.message}}
 		</div>
 		{{/if}}
@@ -56,7 +56,7 @@
 						</div>
 					{{else}}
 						{{#times totalUsers}}
-						<div class="users-element"><i class="fa-2x fa fa-male{{#compare this '<' ../totalChannels}} monster-primary-color{{/compare}}"></i></div>
+						<div class="users-element"><i class="fa-4x fa fa-male{{#compare this '<' ../totalChannels}} monster-primary-color{{/compare}}"></i></div>
 						{{/times}}
 					{{/if}}
 				</div>

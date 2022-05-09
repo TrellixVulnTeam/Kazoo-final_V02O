@@ -12,10 +12,10 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 
-	background: #f9f9f9;
-	border-left: 4px solid #E2E2E2;
-	border-right: 4px solid #E2E2E2;
-	border-bottom: 4px solid #E2E2E2;
+	background: #fff;
+//	border-left: 4px solid #E2E2E2;
+//	border-right: 4px solid #E2E2E2;
+	border-bottom: 4px solid #dcdcdc;
 	border-radius: 4px;
 	font-size: 16px;
 	width: 100%;
@@ -29,32 +29,36 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 
-	border-top: 4px solid #ddd;
+	//border-top: 4px solid #ddd;
 	color: #333;
 	cursor: pointer;
 	font-size: 20px;
 	height: 80px;
 	line-height: 65px;
 	padding: 5px 0px 5px 25px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
 }
 
 #numbers_container .top-box > .half-box:hover {
-	background: rgb(240,240,240); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,240,240,1)), color-stop(100%,rgba(249,249,249,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+	background: #fff; /* Old browsers */
+	border-bottom: 4px solid #dcdcdc;
+//	background: -moz-linear-gradient(top,  rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6+ */
+//	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,240,240,1)), color-stop(100%,rgba(249,249,249,1))); /* Chrome,Safari4+ */
+//	background: -webkit-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* Chrome10+,Safari5.1+ */
+//	background: -o-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* Opera 11.10+ */
+//	background: -ms-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* IE10+ */
+//	background: linear-gradient(to bottom,  rgba(240,240,240,1) 0%,rgba(249,249,249,1) 100%); /* W3C */
+//	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
 }
 
 #numbers_container .top-box > .half-box.selected  {
-	background: #fefefe;
-	border-top: 4px solid $primary-color;
-	box-shadow: inset 0 0 5px #cccccc;
-	color: $primary-color;
-	font-weight: 600;
+	background: #fff;
+	border-bottom: 4px solid #0b559f;
+//	box-shadow: inset 0 0 5px #cccccc;
+	color: #333;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
 }
 
 #numbers_container .top-box > .half-box .count {
@@ -67,7 +71,7 @@
 	background: none repeat scroll 0 0 #FAFAFA;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 1px 1px #999999;
-	color: #999999;
+	color: #333;
 	font-size: 17px;
 	height: 20px;
 	line-height: 20px;
@@ -94,9 +98,9 @@
 
 #numbers_container .account-section .numbers-wrapper .number-box {
 	position: relative;
-	border: 1px solid #ccc;
-	border-bottom-width: 0px;
-	margin-top: -1px;
+	border-bottom: 1px solid #dcdcdc;
+    border-bottom-width: 1px;
+    margin-top: 0px;
 }
 
 #numbers_container .account-section .numbers-wrapper .number-box .number-options {
@@ -242,6 +246,7 @@
 
 #numbers_container .account-section.open .numbers-wrapper {
 	display: block;
+	background-color: #fff;
 }
 
 #numbers_container .account-section:nth-of-type(1) .account-header {
@@ -307,7 +312,7 @@
 }
 
 #numbers_container .search-custom input {
-	padding: 6px;
+	padding: 8px 60px 8px 15px;
 }
 
 @media (max-width: 962px) {
@@ -482,4 +487,9 @@ div.number-options .navbar .nav.pull-right li ul li > a.rename-carrier-number{
 }
 div.number-options .navbar .nav.pull-right li ul li > a.sync-number{
     display: none;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .dropdown-submenu:hover > a {
+    cursor: pointer;
+    color: #fff;
+    background: #f99641;
 }

@@ -140,8 +140,7 @@ body {
           width: 192px;
           height: 100%;
           padding: 0 10px;
-          background: no-repeat center center;
-          border-right: 1px solid #fff; }
+          background: no-repeat center center; }
         body .core-wrapper .core-topbar-wrapper .core-topbar .main-links {
           display: flex;
           justify-content: flex-end;
@@ -162,10 +161,12 @@ body {
               background-size: contain; }
             body .core-wrapper .core-topbar-wrapper .core-topbar .main-links #main_topbar_current_app #main_topbar_current_app_name {
               display: none;
-              font-size: 16px;
+              font-size: 18px;
               max-width: 294px;
               padding-left: 15px;
-              color: #FFF; }
+              color: #FFF;
+              font-family: 'Nunito', sans-serif;
+              font-weight: 600; }
         body .core-wrapper .core-topbar-wrapper .core-topbar .nav {
           display: flex;
           margin: 0; }
@@ -219,6 +220,7 @@ body {
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_user {
           color: #fff;
           font-size: 16px;
+          font-family: 'Nunito', sans-serif;
           font-weight: 600; }
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_user,
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_accountname {

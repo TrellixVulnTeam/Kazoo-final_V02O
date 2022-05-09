@@ -59,7 +59,7 @@
 		height: 100%;
 		padding: 0 10px;
 		background: no-repeat center center;
-		border-right: 1px solid #fff;
+		//border-right: 1px solid #fff;
 	}
 	.main-links {
 		display: flex;
@@ -84,10 +84,12 @@
 			}
 			#main_topbar_current_app_name {
 				display: none;
-				font-size: 16px;
+				font-size: 18px;
 				max-width: 294px;
 				padding-left: 15px;
 				color: $white;
+				font-family: 'Nunito', sans-serif;
+				font-weight: 600;
 			}
 		}
 	}
@@ -168,6 +170,7 @@
 	#main_topbar_myaccount_user {
 		color: #fff;
 		font-size: 16px;
+		font-family: 'Nunito', sans-serif;
 		font-weight: 600;
 	}
 	#main_topbar_myaccount_user,

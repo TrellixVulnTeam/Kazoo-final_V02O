@@ -71,6 +71,9 @@
 }
 
 /********** Content **********/
+.dashboard-top-message.link-box > .fa.fa-exclamation-triangle{
+    color: #fff;
+}
 #myoffice_container .dashboard-content {
 	.dashboard-top-message {
 		padding: 10px;
@@ -81,13 +84,15 @@
 	.dashboard-top-message{
 		&.link-box[data-category] {
 			cursor: pointer;
+			background-color: #dc1a59;
+			color: #fff;
 			&:hover {
-				background-color: #ff3b29;
-				background-image: -moz-linear-gradient(top, #ff3a28, #ff6161);
+				background-color: #dc1a59;
+		/*		background-image: -moz-linear-gradient(top, #ff3a28, #ff6161);
 				background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff3a28), to(#ff6161));
 				background-image: -webkit-linear-gradient(top, #ff3a28, #ff6161);
 				background-image: -o-linear-gradient(top, #ff3a28, #ff6161);
-				background-image: linear-gradient(to bottom, #ff3a28, #ff6161);
+				background-image: linear-gradient(to bottom, #ff3a28, #ff6161);*/
 			}
 		}
 		i {
@@ -113,28 +118,35 @@
 #myoffice_container .dashboard-left-content .left-section-header  {
 	height: 50px;
 	line-height: 50px;
-	border-bottom: solid 1px #aaa;
-	border-top: solid 1px #aaa;
-	padding: 0 10px;
-	margin-bottom: 20px;
+	border-bottom: solid 1px #dcdcdc;
+	//border-top: solid 1px #aaa;
+	padding: 10px 20px;
+	//margin-bottom: 20px;
 }
 #myoffice_container .dashboard-left-content .left-section-header.link-box {
-	background-color: #f6f6f6;
-	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-color: #fff;
+/*	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
-	background-image: linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image: linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);*/
 	border-radius: 2px;
-	border: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
 }
+#myoffice_container .dashboard-left-section {
+    margin-bottom: 20px;
+    background: #fff;
+}
+
 #myoffice_container .dashboard-left-content .left-section-header .title {
 	font-size: 22px;
 	color: #555;
+	font-family: 'Nunito', sans-serif;
+    font-weight: 700;
 }
 #myoffice_container .dashboard-left-content .left-section-header .number {
 	font-size: 24px;
-	color: #22a5ff;
+	color: #2ec0e9;
 	float: right;
 }
 #myoffice_container .dashboard-left-content .users-section-content .users-element {
@@ -160,6 +172,7 @@
 
 #myoffice_container .users-section-content {
 	display: block;
+	padding: 30px 20px;
 }
 
 #myoffice_container .users-section-content .users-canvas-wrapper {
@@ -222,7 +235,7 @@
 }
 #myoffice_container .devices-section-content .unregistered-devices {
 	margin-top: 25px;
-	padding: 0px 10px;
+	padding: 10px 10px;
 	font-size: 16px;
 }
 /*****************/
@@ -233,6 +246,7 @@
 #myoffice_container .dashboard-right-content .dashboard-box {
 	border: 1px solid #dcdcdc;
 	border-radius: 2px;
+	background-color: #fff;
 }
 #myoffice_container .dashboard-right-content .dashboard-box > :first-child {
 	border-top-left-radius: 4px;
@@ -260,20 +274,20 @@
 	color: #ffffff;
 }
 #myoffice_container .dashboard-right-content .dashboard-box .dashboard-box-row {
-	padding: 10px;
-	background-color: #f6f6f6;
-	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	padding: 10px 20px;
+	background-color: #fff;
+	/*background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image: -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
-	background-image: linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image: linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);*/
 	color: #555;
 }
 #myoffice_container .dashboard-right-content .dashboard-box .dashboard-box-row.fax-number-row {
 	display: none; /*Hiding Fax temporarily*/
 }
 #myoffice_container .dashboard-right-content .dashboard-box > * {
-	border-bottom: solid 1px #c0c0c0;
+	border-bottom: solid 1px #dcdcdc;
 }
 #myoffice_container .dashboard-right-content .dashboard-box > :last-of-type {
 	border-bottom: none;
@@ -338,6 +352,8 @@
 	background-color: #f6f6f6;
 	font-size: 22px;
 	color: #555;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
 }
 #myoffice_container .dashboard-right-content .dashboard-box .dashboard-box-div .div-title .number {
 	float: right;
@@ -408,7 +424,7 @@
 #myoffice_container .dashboard-content-div .link-box:hover,
 #myoffice_container .dashboard-content-div .div-title.link-box:hover {
 	cursor: pointer;
-	background: #eeeeee;
+	background: #fff;
 }
 #myoffice_container .dashboard-right-content .dashboard-box .dashboard-warning-row.link-box:hover {
 	background-color: #faa732;
@@ -472,4 +488,7 @@
 @keyframes warning-pulse-box {
 	0% { box-shadow: 0px 0px 5px #fbb450 inset, 0px 0px 5px #f89406; }
 	100% { box-shadow: 0px 0px 30px #fbb450 inset, 0px 0px 10px #f89406; }
+}
+div.left-section-content.devices-section-content{
+	padding: 10px 10px 0px 20px;
 }
