@@ -98,7 +98,7 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	min-width: 120px;
-	padding: 8px 15px;
+	padding: 9px 54px;
 	letter-spacing: .02em;
 	color: #707079;
 	border: solid 1px;
@@ -186,14 +186,29 @@ h1 {
 }
 .monster-button-success {
 	color: #fff;
-	border-color: darken($success-color, 20%);
-	background: #0b559f;
+	border-color: #3ebb91;
+	background: #3ebb91;
 	&.dropdown-toggle {
 		min-width: 20px;
 		.caret {
 			margin-top: 8px;
 		}
 	}
+}
+#delete_user{
+	font-size: 15px;
+    min-width: 120px;
+    padding: 12px 30px;
+    letter-spacing: .02em;
+    color: #fff;
+    border-radius: 2px;
+    background: #ec1a57;
+    cursor: pointer;
+}
+#delete_user > i{
+	
+    color: #fff !important;
+    
 }
 .monster-button-warning {
 	color: #8f6b00;
@@ -362,15 +377,15 @@ h1 {
 	   -moz-transition: all .2s ease-out;
 		 -o-transition: all .2s ease-out;
 			transition: all .2s ease-out;
-	border: solid 1px #c0c0c9;
+//	border: solid 1px #c0c0c9;
 	border-radius: 15px;
 	background: $background-primary-color;
 }
 .monster-switch > input:checked + span {
 	padding-right: 34px;
 	color: #FFF;
-	border-color: darken($primary-color, 20%);
-	background: $primary-color;
+	border-color: #22a5ff;
+	background: #22a5ff;
 }
 .monster-switch > input:not(:checked) + span {
 	padding-left: 34px;
@@ -862,7 +877,7 @@ label.monster-radio-large > i::after {
 }
 .container-menu > .left-menu {
     float: left;
-    width: 18%;
+    width: 15%;
     height: 900px;
     margin: 0px;
     background-color: #34474e;
@@ -873,7 +888,7 @@ label.monster-radio-large > i::after {
 	position: relative;
 	display: block;
 	height: 30px;
-	padding: 15px 5px;
+	padding: 15px 10px;
 	cursor: pointer;
 	color: #84939a;
 	//border: 1px solid #dcdcdc;
@@ -979,9 +994,9 @@ label.monster-radio-large > i::after {
 	margin-right: 12px;
 }
 .container-menu .right-content {
-    width: 75%;
+    width: 80%;
     margin-left: auto;
-    padding: 15px 60px 0;
+    padding: 20px 35px 0px 0px;
 }
 .container-menu .right-content > * {
 	margin-top: 0;
@@ -1174,7 +1189,7 @@ label.monster-radio-large > i::after {
 /************************************************************/
 
 .monster-primary-color {
-	color: #0b559f !important;
+	color: #2ac2eb !important;
 }
 
 .monster-white {
