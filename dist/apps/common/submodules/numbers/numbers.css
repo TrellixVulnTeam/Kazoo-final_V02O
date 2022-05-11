@@ -411,3 +411,6 @@ div.number-options .navbar .nav.pull-right li ul li > a.sync-number {
   cursor: pointer;
   color: #fff;
   background: #f99641; }
+
+.monster-button.monster-button-success.non-fixed.search-numbers {
+  background-color: #0b559f; }
