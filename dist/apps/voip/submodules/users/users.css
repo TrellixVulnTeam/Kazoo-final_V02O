@@ -826,9 +826,6 @@ div.user-cells > .name.grid-cell {
     .monster-feature-popup-container[data-feature="vmbox"] .content .extra-content.disabled {
       display: none; }
 
-#outbound_privacy > option[value=name] {
-  display: none; }
-
 .input-small {
   width: 180px;
   height: 30px !important;

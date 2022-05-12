@@ -805,6 +805,12 @@
       -o-transform: rotate(90deg);
       color: #22a5ff; }
 
+#voip_container .right-content div.strategy-numbers-wrapper .number-element .features-block.pull-right .edit-features .navbar .nav.pull-right li ul li > a.rename-carrier-number {
+  display: none; }
+
+#voip_container .right-content div.strategy-numbers-wrapper .number-element .features-block.pull-right .edit-features .navbar .nav.pull-right li ul li > a.sync-number {
+  display: none; }
+
 #voip_container_overlay {
   position: fixed;
   top: 0;

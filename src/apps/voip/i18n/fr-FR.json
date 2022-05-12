@@ -32,10 +32,12 @@
 			"name": "Nom du groupe",
 			"selectedUsers": "Utilisateurs sélectionnés",
 			"title": "Création d'un groupe",
-			"missingDataAlert": "Vous devez choisir un nom ainsi qu'une extension pour ce groupe"
+			"missingDataAlert": "Vous devez choisir un nom ainsi qu'une extension pour ce groupe",
+			"findExtension": "Trouver"
 		},
 		"groupDeleted": "Le groupe {{name}} a été supprimé avec succès!",
 		"name": "Nom du groupe",
+		"repeats": "Répétition",
 		"noAssignedExtensions": "Aucune extension attribuée à ce groupe.",
 		"noExtension": "Aucune",
 		"noFeatures": "Aucune",
@@ -484,7 +486,7 @@
 			"number": "Ce numéro",
 			"placeholder": "+14157283992",
 			"requireKeyPress": "Laisser message sur le répondeur du numéro transferé",
-			"title": "Transfert d'appels",
+			"title": "Déviation d'appels",
 			"timeoutWarning": "Afin de pouvoir laisser un message sur le répondeur du numéro transferé, la durée de sonnerie de l'utilisateur doit être d'au moins 30sec. En cliquant sur le bouton \"Sauvegarder\", vous serez automatiquement redirigé vers l'édition d'utilisateur où vous pourrez modifier la durée de sonnerie."
 		},
 		"callRecording": {
@@ -507,7 +509,7 @@
 			"noConfNumbers": "Vous devez ajouter un Numéro principal de Conférence (Voir \"Numéro principal\" dans le menu de gauche) avant de pouvoir configurer les Conférences personnelles des utilisateurs"
 		},
 		"faxing": {
-			"title": "Faxbox",
+			"title": "Fax",
 			"headline": "Faxbox",
 			"defaultSettings": {
 				"nameExtension": "'s Faxbox",
@@ -545,7 +547,8 @@
 			}
 		},
 		"vmbox": {
-			"deleteAfterNotify": "Supprimer les messages vocaux de la base de données après l'envoi de la notification."
+			"deleteAfterNotify": "Supprimer les messages vocaux de la base de données après l'envoi de la notification.",
+			"title": "Répondeur"
 		},
 		"find_me_follow_me": {
 			"title": "Ordre d'appel",
@@ -557,7 +560,7 @@
 			"distribute": "Répartir"
 		},
 		"caller_id": {
-			"title": "Numéro de Caller-ID",
+			"title": "Numéro affiché",
 			"dropdownLabel": "Numéro de Caller-Id:",
 			"headline": "Réglages du numéro de Caller-ID de l'utilisateur",
 			"help": "Si cette fonctionnalité n'est pas activé, le Caller-ID affiché par défaut sera celui configuré sur le numéro principal de l'entreprise."
