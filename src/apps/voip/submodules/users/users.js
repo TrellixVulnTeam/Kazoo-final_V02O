@@ -268,11 +268,11 @@ define(function(require) {
 							iconColor: 'monster-blue',
 							title: self.i18n.active().users.callRecording.title
 						},
-						do_not_disturb: {
+					/*	do_not_disturb: {
 							icon: 'fa fa-ban',
 							iconColor: 'monster-red',
 							title: self.i18n.active().users.do_not_disturb.title
-						}
+						}*/
 					},
 					outboundPrivacy: _.map(self.appFlags.common.outboundPrivacy, function(item) {
 						return {

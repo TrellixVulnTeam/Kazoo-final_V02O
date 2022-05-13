@@ -8,9 +8,10 @@
 }
 
 #vmboxes_container .vmboxes-header .title {
-	padding: 15px;
-	border: 1px solid #dcdcdc;
+	padding: 20px 20px;
+/*	border: 1px solid #dcdcdc;*/
 	border-radius: 2px 0 0 2px;
+	background-color: #fff;
 }
 
 #vmboxes_container .vmboxes-header .count-vmboxes {
@@ -28,15 +29,17 @@
 
 #vmboxes_container .vmboxes-header .add-vmbox {
 	margin: 0;
-	padding: 9px 13px;
-	border: 1px solid #dcdcdc;
+	padding: 14px 16px;
+	background-color: #22a5ff;
+	color: #fff;
+/*	border: 1px solid #dcdcdc;
 	border-left: 0;
 	border-radius: 0 2px 2px 0;
-	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+/*	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:    -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:     -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:      -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
-	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);*/
 	height: 42px;
 	vertical-align: top;
 	text-align: center;
@@ -44,8 +47,8 @@
 }
 
 #vmboxes_container .vmboxes-header .add-vmbox:hover {
-	background-image: none;
-	background-color: #eee;
+/*	background-image: none;
+	background-color: #eee;*/
 	text-decoration: none;
 }
 
@@ -53,21 +56,21 @@
 	font-size: 16px;
 	display: block;
 	margin: 0;
-	color: #929799;
+	color: #fff;
 	text-decoration: none;
 }
 
 #vmboxes_container .vmboxes-header .add-vmbox:hover i {
-	color: #22a5ff;
+	color: #fff;
 }
 
 #vmboxes_container .vmboxes-header .search-box { margin: 16px 0 16px 15px; }
 
 #vmboxes_container .vmboxes-grid {
-	background: #fcfcfc;
-	border: 1px solid #ddd;
+	background: #fff;
+/*	border: 1px solid #ddd;*/
 	border-radius: 2px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 #vmboxes_container .vmboxes-grid i.fa-plus {
