@@ -305,10 +305,10 @@
   margin-left: 10px; }
 
 #voip_container .left-menu #myOffice {
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 #voip_container .left-menu > div {
-  margin-top: 10px; }
+  margin-top: 0px; }
 
 #voip_container .right-content #strategy_container .clearfix:after {
   clear: right; }
@@ -804,6 +804,12 @@
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg);
       color: #22a5ff; }
+
+#voip_container .right-content div.strategy-numbers-wrapper .number-element .features-block.pull-right .edit-features .navbar .nav.pull-right li ul li > a.rename-carrier-number {
+  display: none; }
+
+#voip_container .right-content div.strategy-numbers-wrapper .number-element .features-block.pull-right .edit-features .navbar .nav.pull-right li ul li > a.sync-number {
+  display: none; }
 
 #voip_container_overlay {
   position: fixed;

@@ -27,15 +27,15 @@ define(function(require) {
 		},
 
 		chartColors: [
-			'#B588B9', // Purple ~ Mauve
+			'#ebebeb', // Light grey
 			'#698BF7', // Purple ~ Dark Blue
 			'#009AD6', // Blue
-			'#6CC5E9', // Light Blue
+			'#2ac2eb', // Light Blue
 			'#719B11', // Dark Green
-			'#BDE55F', // Light Green
+			'#3ebb91', // Light Green
 			'#F1E87C', // Pale Yellow
-			'#EF8F25', // Orange
-			'#6F7C7D' // Grey
+			'#f99641', // Orange
+			'#f99641', // Orange
 		],
 
 		/* My Office */

@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     flex: 1; }
     body .core-wrapper .core-topbar-wrapper {
-      background-color: #303039;
+      background-color: #0b559f;
       padding-top: 5px;
       /***** Account Toggle *****/ }
       body .core-wrapper .core-topbar-wrapper .progress-indicator {
@@ -24,7 +24,7 @@ body {
         height: 5px;
         display: block;
         width: 100%;
-        background-color: #2297FF;
+        background-color: #0b559f;
         background-clip: padding-box;
         overflow: hidden; }
         body .core-wrapper .core-topbar-wrapper .progress-indicator.active {
@@ -32,7 +32,7 @@ body {
           z-index: 9999;
           background-color: #303039; }
           body .core-wrapper .core-topbar-wrapper .progress-indicator.active .indeterminate {
-            background-color: #2297FF; }
+            background-color: #0b559f; }
             body .core-wrapper .core-topbar-wrapper .progress-indicator.active .indeterminate:before {
               content: '';
               position: absolute;
@@ -104,7 +104,7 @@ body {
         display: flex;
         height: 62px; }
         body .core-wrapper .core-topbar-wrapper .core-topbar .open .links {
-          background-color: #151517;
+          background-color: #dc1a59;
           color: #FFF; }
           body .core-wrapper .core-topbar-wrapper .core-topbar .open .links i, body .core-wrapper .core-topbar-wrapper .core-topbar .open .links svg {
             color: #FFF; }
@@ -112,16 +112,16 @@ body {
           display: flex;
           align-items: center;
           height: 100%;
-          color: #bcbcc2;
+          color: #fff;
           background-color: transparent;
-          border-left: 1px solid #303039; }
+          border-left: 1px solid #0b559f; }
           body .core-wrapper .core-topbar-wrapper .core-topbar .links:hover, body .core-wrapper .core-topbar-wrapper .core-topbar .links:focus {
             cursor: pointer;
-            background-color: #151517; }
+            background-color: #0b559f; }
           body .core-wrapper .core-topbar-wrapper .core-topbar .links i {
             font-size: 16px; }
           body .core-wrapper .core-topbar-wrapper .core-topbar .links i, body .core-wrapper .core-topbar-wrapper .core-topbar .links svg {
-            color: #c0c0c9;
+            color: #fff;
             width: 16px;
             height: 16px; }
           body .core-wrapper .core-topbar-wrapper .core-topbar .links .inline-text {
@@ -140,8 +140,7 @@ body {
           width: 192px;
           height: 100%;
           padding: 0 10px;
-          background: no-repeat center center;
-          border-right: 1px solid #151517; }
+          background: no-repeat center center; }
         body .core-wrapper .core-topbar-wrapper .core-topbar .main-links {
           display: flex;
           justify-content: flex-end;
@@ -162,10 +161,12 @@ body {
               background-size: contain; }
             body .core-wrapper .core-topbar-wrapper .core-topbar .main-links #main_topbar_current_app #main_topbar_current_app_name {
               display: none;
-              font-size: 16px;
+              font-size: 18px;
               max-width: 294px;
               padding-left: 15px;
-              color: #FFF; }
+              color: #FFF;
+              font-family: 'Nunito', sans-serif;
+              font-weight: 600; }
         body .core-wrapper .core-topbar-wrapper .core-topbar .nav {
           display: flex;
           margin: 0; }
@@ -205,7 +206,7 @@ body {
           align-items: center;
           width: 38px;
           height: 38px;
-          background-color: #909099;
+          background-color: #dc1a59;
           border-radius: 50%;
           color: white;
           font-size: 18px;
@@ -217,8 +218,9 @@ body {
           max-width: 180px;
           padding-left: 12px; }
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_user {
-          color: #e0e0e9;
+          color: #fff;
           font-size: 16px;
+          font-family: 'Nunito', sans-serif;
           font-weight: 600; }
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_user,
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_myaccount_accountname {
@@ -277,14 +279,14 @@ body {
           display: flex; }
       body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-toggle-header {
         background: #202029;
-        color: #c0c0c9;
+        color: #fff;
         padding: 10px 12px 0px 12px;
         position: relative;
         width: 198px; }
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-toggle-header .current-account-label {
           font-size: 12px; }
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-toggle-header .current-account-container {
-          color: #2297FF; }
+          color: #0b559f; }
           body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-toggle-header .current-account-container .missing-info {
             color: #909099;
             font-style: italic;
@@ -327,8 +329,8 @@ body {
         body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-browser-container .account-list-element {
           border-color: #202029; }
           body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-browser-container .account-list-element > div {
-            background: #303039;
-            color: #c0c0c9;
+            background: #202029;
+            color: #fff;
             border-color: #202029; }
           body .core-wrapper .core-topbar-wrapper .core-topbar #main_topbar_account_toggle #main_topbar_account_toggle_container .account-browser-container .account-list-element .active > div {
             color: #2297FF; }

@@ -2,18 +2,20 @@
 	font-size: 24px;
 	line-height: 60px;
 	margin-bottom: 22px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
 }
 
 #feature_codes_container .feature-codes-content {
 	padding: 20px;
 	border: 1px solid #dcdcdc;
 	border-radius: 2px;
-	background-color: #f6f6f6;
-	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-color: #fff;
+/*	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:    -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:     -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
 	background-image:      -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
-	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%); */
 	color: #555;
 }
 
@@ -24,7 +26,9 @@
 #feature_codes_container .feature-codes-content .category-header {
 	font-size: 18px;
 	margin: 10px;
-	font-weight: 600;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+
 }
 
 #feature_codes_container .feature-codes-content .feature-code-line:not(:first-child) {
@@ -35,8 +39,8 @@
 	border-bottom: solid 1px transparent;
 }
 #feature_codes_container .feature-codes-content .feature-code-line:hover {
-	border-bottom-color: #dcdcdc;
-	border-top-color: #dcdcdc;
+	border-bottom-color: #fff;
+	border-top-color: #fff;
 }
 
 #feature_codes_container .feature-codes-content .feature-code-line div {

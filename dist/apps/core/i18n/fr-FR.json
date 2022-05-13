@@ -100,7 +100,7 @@
 	"upload":"Uploader",
 	"validation":{
 		"defaultRules":{
-			"required":"Champ requis.",
+			"required":"Ce Champs est obligatoire",
 			"remote":"Corrigez ce champ.",
 			"email":"Adresse e-mail valide.",
 			"url":"URL invalide.",

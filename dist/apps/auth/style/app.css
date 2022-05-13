@@ -8,7 +8,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #2297FF;
+  background-color: #dc1a59;
   overflow-y: hidden; }
 
 #auth_app_container .app-content {
@@ -49,13 +49,13 @@
   width: 59%;
   float: left;
   height: 100vh;
-  background-color: #303039;
+  background-color: #0b559f;
   position: relative; }
 
 #auth_app_container .intro::after {
   display: block;
   content: '';
-  background-color: #303039;
+  background-color: #0b559f;
   position: absolute;
   right: -120px;
   height: 100%;
@@ -70,18 +70,19 @@
   z-index: 1; }
 
 #auth_app_container .logo {
-  width: 210px;
-  height: 62px;
+  width: 280px;
+  height: 65px;
   background: url("../img/kazoo-logo.svg");
   background-repeat: no-repeat;
   background-position: center; }
 
 #auth_app_container .intro h3 {
   color: #FFF;
-  font-weight: lighter;
+  font-weight: 700;
   max-width: 425px;
   line-height: 1.1em;
-  margin: 20px 0 0 0; }
+  margin: 20px 0 0 0;
+  font-family: 'Nunito', sans-serif; }
 
 #auth_app_container .social {
   position: absolute;
@@ -155,7 +156,9 @@
   color: #ffffff;
   height: 50px;
   font-size: 20px;
-  background: #2297FF;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  background: #0b559f;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -165,7 +168,7 @@
 #auth_app_container .btn-submit:hover,
 #auth_app_container .btn-submit:focus {
   color: #ffffff;
-  background: #57bcff;
+  background: #0b559f;
   outline: none; }
 
 #auth_app_container .form-info {
@@ -189,7 +192,7 @@
   text-align: center;
   display: block;
   font-size: 13px;
-  color: #2297FF;
+  color: #0b559f;
   margin: 0 auto;
   cursor: pointer; }
 

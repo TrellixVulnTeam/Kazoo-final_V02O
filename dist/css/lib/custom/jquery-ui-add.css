@@ -24,7 +24,7 @@
     width: 40px;
     border: none;
     background: none;
-    color: #006bca; }
+    color: #fff; }
 
 .ui-dialog .ui-dialog-content {
   min-width: 300px;
@@ -36,7 +36,7 @@
   padding: 10px 20px;
   border: 0;
   border-radius: 2px 2px 0 0;
-  background: #2297FF; }
+  background: #0b559f; }
 
 .ui-dialog .ui-dialog-title {
   font-size: 24px;
@@ -44,7 +44,8 @@
   margin: 0;
   font-weight: 400;
   letter-spacing: .4px;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Nunito', sans-serif; }
 
 /* Special rules for alerts & confirms */
 .ui-dialog.monster-alert .ui-dialog-titlebar,
