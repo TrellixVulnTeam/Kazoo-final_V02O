@@ -70,7 +70,7 @@
   z-index: 1; }
 
 #auth_app_container .logo {
-  width: 100%;
+  width: 280px;
   height: 65px;
   background: url("../img/kazoo-logo.svg");
   background-repeat: no-repeat;

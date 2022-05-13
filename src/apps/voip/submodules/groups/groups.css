@@ -314,7 +314,7 @@
 	line-height: 30px;
 }
 #creation_group_dialog .one-line-form label.monster-invalid {
-	top: 30px;
+/*	top: 30px;*/
 	left: 5px;
 	line-height: 20px !important;
 }
