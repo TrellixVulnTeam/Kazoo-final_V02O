@@ -464,7 +464,7 @@
   width: 330px; }
 
 #my_office_music_on_hold_popup .upload-div button.upload-action {
-  margin-left: 10px;
+  margin-left: 2px;
   min-width: 20px;
   padding-right: 10px; }
 
@@ -477,7 +477,7 @@
   padding: 6px; }
 
 #my_office_music_on_hold_popup .upload-div .file-upload > button {
-  width: 120px; }
+  width: auto; }
 
 #myoffice_container .warning-pulse-box {
   -webkit-animation: "warning-pulse-box" 1s ease-in-out 0 infinite alternate;

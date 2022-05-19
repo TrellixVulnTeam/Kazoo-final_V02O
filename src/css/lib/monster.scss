@@ -61,7 +61,7 @@ h1 {
 	text-decoration: underline;
 
 	&.blue {
-		color: $primary-color;
+		color: #333;
 	}
 
 	&.orange {
@@ -408,12 +408,23 @@ h1 {
 	border-color: darken($primary-color, 20%);
 	background: #fff;
 }
-
+.search-box .search-query {
+    padding-left: 26px;
+    border-radius: 0;
+    height: 24px;
+    width: 170px;
+	box-shadow: 0 0 4pt 0pt #d3d3d3;
+	color: #dae0e8;
+}
+.search-box > i.fa-search{
+	color: #dae0e8;
+}
 /************************************************************/
 /*********** INPUT & CHECKBOXES & RADIOS ********************/
 /************************************************************/
 select, textarea, input[type="text"]:not(.search-query), input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
 	border-color: #dcdcdc;
+	box-shadow: 0 0 4pt 0pt #d3d3d3;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
 	box-shadow: none;
@@ -650,28 +661,29 @@ label.monster-radio-large > i::after {
 	min-height: 20px;
 	margin: 10px 0 10px 0;
 	border-radius: 2px;
-	box-shadow: 1px 1px 2px #ddd;
+//	box-shadow: 1px 1px 2px #ddd;
 }
 .help-box .wrapper-icon {
 	line-height: 30px;
 	position: relative;
-	top: -10px;
+//	top: -10px;
 	left: -10px;
 	width: 30px;
 	height: 30px;
 	text-align: center;
 	border-radius: 15px;
-	background: #eee;
-	box-shadow: 1px 1px 2px #888 inset;
+	background: #0b559f;
+//	box-shadow: 1px 1px 2px #888 inset;
 }
 .help-box .wrapper-icon > i {
 	font-size: 20px;
 	font-style: normal;
 	font-weight: bold;
 	margin: 4px 0;
+	color: #fff !important;
 }
 .help-box .text-wrapper {
-	color: #303039;
+	color: #333;
 	font-size: 12px;
 	line-height: 20px;
 	margin-top: -40px;
@@ -687,10 +699,10 @@ label.monster-radio-large > i::after {
 }
 
 /**************** COLORS ****************/
-.gray-box {
-	border: 1px solid #ddd;
-	background: #eee;
-}
+//.gray-box {
+//	border: 1px solid #ddd;
+//	background: #eee;
+//}
 .yellow-box {
 	border: 1px solid yellow;
 	background: #ff9;
@@ -699,7 +711,7 @@ label.monster-radio-large > i::after {
 	background: #efe5db;
 }
 .red-box {
-	background: #fce3e3;
+	background: #fff;
 }
 .green-box {
 	background: #cceca0;
@@ -1946,43 +1958,56 @@ table.monster-table {
 .monster-search.transparent > input {
 	background-color: transparent;
 }
+#my_office_music_on_hold_popup > .content{
+	border: none;
+	}
+#my_office_music_on_hold_popup .content div > button.monster-button.monster-button-primary.upload-toggle{
+		margin-left: 0px !important;
+		margin-top: 10px !important;
+	}
 
+#my_office_music_on_hold_popup .upload-div .file-upload > input {
+		margin: 0px 10px 10px 0px !important;
+		width: 225px !important;
+		padding: 6px;
+	}
 /************************************************************/
 /****************** MONSTER FEATURE DIALOG ******************/
 /************************************************************/
-.monster-feature-popup-container {}
+//.monster-feature-popup-container {}
 
 .monster-feature-popup-container .feature-fa-wrapper{
 	display: inline-block;
 	margin: 20px;
 	width: 60px;
 	height: 60px;
+	vertical-align: middle;
 
-	border: 5px solid #DDDDDD;
-	border-radius: 60px 60px 60px 60px;
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  hsl(0,0%,100%) 0%, hsl(0,0%,87%) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(0,0%,100%)), color-stop(100%,hsl(0,0%,87%))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* W3C */
+//	border: 5px solid #DDDDDD;
+//	border-radius: 60px 60px 60px 60px;
+//	background: #ffffff; /* Old browsers */
+/*	background: -moz-linear-gradient(top,  hsl(0,0%,100%) 0%, hsl(0,0%,87%) 100%); /* FF3.6+ */
+/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(0,0%,100%)), color-stop(100%,hsl(0,0%,87%))); /* Chrome,Safari4+ */
+/*	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* Chrome10+,Safari5.1+ */
+//	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* Opera 11.10+ */
+//	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* IE10+ */
+//	background: linear-gradient(to bottom,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); /* W3C */
 /*	box-shadow: 0 -1px 2px #666666 inset;*/
 	text-align: center;
 	line-height: 60px;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+//	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
 }
 
-.monster-feature-popup-container .feature-fa-wrapper.active{
-	background: #19d332; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%, hsl(132,46%,46%) 61%, hsl(0,0%,0%) 99%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(128,79%,46%)), color-stop(61%,hsl(132,46%,46%)), color-stop(99%,hsl(0,0%,0%))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d332', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+//.monster-feature-popup-container .feature-fa-wrapper.active{
+//	background: #19d332; /* Old browsers */
+//	background: -moz-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%, hsl(132,46%,46%) 61%, hsl(0,0%,0%) 99%); /* FF3.6+ */
+//	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(128,79%,46%)), color-stop(61%,hsl(132,46%,46%)), color-stop(99%,hsl(0,0%,0%))); /* Chrome,Safari4+ */
+//	background: -webkit-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* Chrome10+,Safari5.1+ */
+//	background: -o-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* Opera 12+ */
+//	background: -ms-radial-gradient(center, ellipse cover,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* IE10+ */
+//	background: radial-gradient(ellipse at center,  hsl(128,79%,46%) 0%,hsl(132,46%,46%) 61%,hsl(0,0%,0%) 99%); /* W3C */
+//	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d332', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+//}
 
 .monster-feature-popup-container {
 	width: 510px;
@@ -1991,11 +2016,21 @@ table.monster-table {
 .monster-feature-popup-container .actions,
 .monster-feature-popup-container .content {
 	padding: 15px 25px;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #e2e5e8;
+}
+.monster-feature-popup-container > .actions{
+	padding: 15px 25px;
+	border-top: none;
 }
 
 .monster-feature-popup-container .actions .monster-link {
 	margin-right: 10px;
+	min-width: 120px;
+    padding: 10px 30px 12px 30px;
+    background-color: #dae1e8;
+    color: #333;
+    letter-spacing: .02em;
+    font-size: 15px;
 }
 
 .monster-feature-popup-container .switch {
@@ -2024,6 +2059,9 @@ table.monster-table {
 .monster-feature-popup-container input,
 .monster-feature-popup-container select {
 	margin-left: 10px;
+	height: 40px;
+    width: 250px;
+    box-shadow: 0 0 4pt 0pt #d3d3d3;
 }
 
 /* Monster Phone Number Wrapper */

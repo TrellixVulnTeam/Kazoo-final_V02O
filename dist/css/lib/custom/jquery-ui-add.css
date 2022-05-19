@@ -24,7 +24,7 @@
     width: 40px;
     border: none;
     background: none;
-    color: #fff; }
+    color: #dc1a59; }
 
 .ui-dialog .ui-dialog-content {
   min-width: 300px;
@@ -36,7 +36,7 @@
   padding: 10px 20px;
   border: 0;
   border-radius: 2px 2px 0 0;
-  background: #0b559f; }
+  background: #fff; }
 
 .ui-dialog .ui-dialog-title {
   font-size: 24px;
@@ -44,7 +44,7 @@
   margin: 0;
   font-weight: 400;
   letter-spacing: .4px;
-  color: #fff;
+  color: #555;
   font-family: 'Nunito', sans-serif; }
 
 /* Special rules for alerts & confirms */
@@ -81,7 +81,8 @@
   font-family: 'Source Sans Pro', Helvetica, sans-serif; }
 
 .ui-dialog .dialog-buttons-wrapper {
-  text-align: right; }
+  text-align: right;
+  padding: 10px 0px; }
 
 /************** DATEPICKER **************/
 .ui-datepicker {

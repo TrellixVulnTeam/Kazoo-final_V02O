@@ -242,10 +242,19 @@
 }
 
 .voip-edit-device-popup .edit-device .actions {
-	border-top: 1px solid #CCCCCC;
+//	border-top: 1px solid #CCCCCC;
 	height: 30px;
 	line-height: 30px;
-	padding: 15px;
+	padding: 30px 15px;
+}
+
+.voip-edit-device-popup .edit-device .actions .pull-right > a {
+    min-width: 120px;
+    padding: 10px 30px 12px 30px;
+    background-color: #dae1e8;
+    color: #333;
+    letter-spacing: .02em;
+    font-size: 15px;
 }
 
 .voip-edit-device-popup .edit-device .actions{
@@ -262,9 +271,24 @@
 		}
 	}
 }
+li.tabs-main-selector.main-section.active > a.tabs-selector.change-section{
+	background-color: #0b559f !important;
+}
+li.tabs-main-selector.main-section.dropdown > a.dropdown-toggle{
+	background-color: #dae1e8 !important;
 
+}
+li.tabs-main-selector.main-section.dropdown > a.dropdown-toggle:hover{
+	color: #333 !important;
+
+}
+li.tabs-main-selector.main-section.dropdown a.dropdown-toggle > b.caret{
+	border-top-color: #333 !important;
+
+}
+dropdown-toggle
 .voip-edit-device-popup .edit-device .title-bar {
-	border-bottom: 1px solid #ccc;
+//	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
 }
 
@@ -626,3 +650,19 @@
 .voip-edit-device-popup .edit-device .form-horizontal .control-label.checkbox-basic {
 	margin-left: 160px;
 }
+div.btn-group.dropup > button.monster-button-success.save{
+	width: 240px;
+}
+.voip-edit-device-popup .ui-dialog-content .edit-device .actions > a{
+	font-size: 15px;
+    min-width: 120px;
+    padding: 12px 10px;
+    letter-spacing: .02em;
+    color: #fff !important;
+    border-radius: 2px;
+    background: #ec1a57;
+    cursor: pointer;
+} 
+.voip-edit-device-popup .ui-dialog-content .edit-device .actions a > i{
+    color: #fff !important;
+} 

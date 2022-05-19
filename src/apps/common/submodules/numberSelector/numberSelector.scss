@@ -49,6 +49,7 @@
 .number-selector .number-selector-dropdown .number-selector-clickable {
 	background-color: transparent;
 	height: 30px;
+	box-shadow: 0 0 4pt 0pt #d3d3d3;
 }
 .number-selector .number-selector-dropdown .number-selector-element {
 	display: none;
@@ -56,7 +57,7 @@
 	line-height: 30px;
 	padding: 0px 10px;
 	background: #fff;
-	border: solid 1px #c0c0c9;
+//	border: solid 1px #c0c0c9;
 	border-bottom: none;
 }
 .number-selector .number-selector-dropdown.open .number-selector-element:not(.hidden) {
@@ -64,14 +65,16 @@
 }
 .number-selector .number-selector-dropdown .number-selector-element:hover {
 	cursor: pointer;
-	background: #f0f0f9;
+	background: #f99641;
 }
+
+
 .number-selector .number-selector-dropdown .number-selector-element:last-child {
 	border-radius: 0px 0px 4px 4px;
 	border-bottom: solid 1px #c0c0c9;
 }
 .number-selector .number-selector-dropdown .link {
-	color: $primary-color;
+	color: #333;
 }
 .number-selector .number-selector-dropdown .number {
 	margin-left: 5px;
