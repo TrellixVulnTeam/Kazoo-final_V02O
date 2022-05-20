@@ -74,7 +74,31 @@
 			"formatLabel": "Format:",
 			"urlLabel": "URL:",
 			"urlPlaceholder": "http://votre.serveur.com/endroit/ou/sauvegarder/enregistrements",
-			"timeLimitLabel": "Limite de temps (s):"
+			"timeLimitLabel": "Limite de temps (s):",
+			"noNumber": "Avant de configurer la fonction d'enregistrement d'appel personnalisé pour cet utilisateur, vous devez lui attribuer un numéro ou une extension",
+			"__comment": "UI-2578: adding call-recording toggles to smart pbx",
+			"__version": "4.1",
+			"toggleValues": {
+				"inboundOnnet": {
+					"title": "Interne entrant:",
+					"help": ""
+				},
+				"inboundOffnet": {
+					"title": "Entrant Externe:",
+					"help": ""
+				},
+				"outboundOnnet": {
+					"title": "Interne sortant:",
+					"help": ""
+				},
+				"outboundOffnet": {
+					"title": "Sortant Externe:",
+					"help": ""
+				},
+				"on": "On",
+				"accountDefault": "Compte par défaut",
+				"off": "Off"
+			}
 		},
 		"ringback": {
 			"title": "Tonalité d'appel",
@@ -114,6 +138,14 @@
 				"3": "Cliquez sur cette case pour acheter, assigner ou porter des numéros. Une fois fait, ces numéros seront automatiquement liés à ce groupe.",
 				"4": "Enfin, cliquez sur cette case pour activer ou désactiver les fonctionnalités de ce groupe d'utilisateurs."
 			}
+		},
+		"__comment": "UI-1206: Adding a feature to add a Caller ID prepend on groups",
+		"__version": "3.22",
+		"prepend": {
+			"title": "Préfixe de l'ID de l'appelant",
+			"headline": "Préfixe de l'ID de l'appelant",
+			"cidNameLabel": "Préfixe du nom d'identification de l'appelant",
+			"cidNumberLabel": "Préfixe du numéro d'identification de l'appelant"
 		}
 	},
 
@@ -176,7 +208,12 @@
 					"help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
 					"success": "Vous avez envoyé une requête de redémarrage avec succès!"
 				},
-
+				"__comment": "UI-1818: Adding notify unregister",
+				"__version": "3.22",
+				"unregisterNotifications": {
+					"label": "Avertir en cas de désinscription",
+					"help": "Souhaitez-vous avertir l'administrateur chaque fois que cet appareil se désinscrit ?"
+				},
 				"unlock": {
 					"label": "Autoriser la mise à jour",
 					"button": "Déverrouiller",
@@ -477,6 +514,7 @@
 		"uploadPicture": "Uploader une image",
 		"user": "Utilisateur",
 		"call_forward": {
+			"failoverMode": "Mode de basculement",
 			"directCallsOnly": "Seulement transférer les appels direct",
 			"headline": "Réglages du transfert d'appel",
 			"keepCallerId": "Garder le Caller-ID",
@@ -487,7 +525,11 @@
 			"placeholder": "+14157283992",
 			"requireKeyPress": "Laisser message sur le répondeur du numéro transferé",
 			"title": "Déviation d'appels",
-			"timeoutWarning": "Afin de pouvoir laisser un message sur le répondeur du numéro transferé, la durée de sonnerie de l'utilisateur doit être d'au moins 30sec. En cliquant sur le bouton \"Sauvegarder\", vous serez automatiquement redirigé vers l'édition d'utilisateur où vous pourrez modifier la durée de sonnerie."
+			"timeoutWarning": "Afin de pouvoir laisser un message sur le répondeur du numéro transferé, la durée de sonnerie de l'utilisateur doit être d'au moins 30sec. En cliquant sur le bouton \"Sauvegarder\", vous serez automatiquement redirigé vers l'édition d'utilisateur où vous pourrez modifier la durée de sonnerie.",
+			"__comment": ": Now add a mode for failover for call forward",
+			"__version": "4.0",
+			"failoverWarning": "En \"Mode de basculement\", les paramètres de transfert d'appel ne s'appliqueront que si aucun des appareils de cet utilisateur n'est enregistré.",
+			"failover_title": "Déviation d'appels (Failover Mode)"
 		},
 		"callRecording": {
 			"title": "Enregistrement d'appel entrant",
@@ -547,8 +589,15 @@
 			}
 		},
 		"vmbox": {
+			"missingExtension": "Vous devez ajouter une extension afin d'activer la boîte vocale",
 			"deleteAfterNotify": "Supprimer les messages vocaux de la base de données après l'envoi de la notification.",
-			"title": "Répondeur"
+			"headline": "Utilisateur Boîte vocale",
+			"text": "Une boîte vocale sera disponible pour cet utilisateur.",
+			"label": "Boîte vocale to e-mail:",
+			"title": "Répondeur",
+			"vmToEmailHelp": "Un e-mail sera envoyé à{{variable}} pour chaque nouveau message vocal. Si vous souhaitez modifier la destination des notifications par e-mail, veuillez modifier l'adresse e-mail de l'utilisateur dans la section Administration des utilisateurs.",
+			"transcribe": "Transcrire",
+			"attachVoicemail": "Joindre un message vocal à un e-mail."
 		},
 		"find_me_follow_me": {
 			"title": "Ordre d'appel",
@@ -953,5 +1002,43 @@
 			"misc": "Divers"
 		},
 		"portIconHelp": "Ce numéro est en cours de transfert et sera supprimé si celui-ci échoue. Il peut être configuré mais ne sera pas utilisable"
-	}
+	},
+	"__comment": "UI-1220: Added VMBox module",
+	"__version": "3.19",
+	"vmboxes": {
+		"addTitle": "Ajouter une boîte vocale",
+		"editTitle": "Modification d'une boîte vocale: {{ name }}",
+		"title": "Nombre total de boîtes vocales",
+		"add": "Ajouter une boîte vocale",
+		"new": "Nouvelle boîte vocale",
+		"createVmbox": "Créer une nouvelle boîte vocale",
+		"deleteVmbox": "Supprimer la boîte vocale",
+		"deleteNotAllowed": "Vous ne pouvez pas supprimer cette boîte vocale car elle appartient à un utilisateur",
+		"confirmDeleteVmbox": "Cette boîte vocale sera définitivement supprimée. Continuez?",
+		"deletedVmbox": "Vous avez supprimé avec succès la boîte vocale suivante\"{{vmboxName}}\".",
+		"titleGrid": {
+			"name": "Nom",
+			"number": "Numéro",
+			"owner": "Utilisateur",
+			"edit": "Modifier"
+		},
+		"noMatchingVMBoxes": "Aucune boîte vocale ne correspond à votre recherche",
+		"noVMBoxesConfigured": "Aucune boîte vocale n'est configurée",
+		"popupSettings": {
+			"advancedTitle": "Avancé",
+			"basicTitle": "Paramètres de base",
+			"basicSectionTitle": "Paramètres de base",
+			"basic": {
+				"name": {
+					"label": "Nom"
+				},
+				"number": {
+					"label": "Numéro de messagerie vocale"
+				},
+				"pinNumber": {
+					"label": "PIN Number"
+				}
+			}
+}
+}
 }

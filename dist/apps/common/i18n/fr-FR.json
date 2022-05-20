@@ -262,6 +262,17 @@
 		"huntError": "Vos réglages d'opérateur actuels ne fonctionnent pas dans cette interface, si vous souhaitez conserver ces réglages, ne changez rien dans ce menu. Sinon, vous pouvez sélectionner une option dans le menu et sauvegarder!"
 	},
 
+	"__comment": "UI-1219: Adding the prepend feature to numbers",
+	"__version": "v3.20_s1",
+	"numberPrepend": {
+		"dialogTitle": "Configuration du préfixe numérique",
+		"title": "Texte à ajouter",
+		"label": "Préfixer",
+		"help": "Ce texte apparaîtra devant votre numéro lors de la réception d'un appel. Cela peut être utilisé pour mieux identifier quel numéro a été appelé lorsque vous en utilisez plusieurs.",
+		"successUpdate": "Vous avez mis à jour avec succès le texte ajouté pour {{phoneNumber}}"
+	},
+
+
 	"__comment": "UI-228: Adding the numberSelector common control",
 	"__version": "v3.20_s4",
 	"numberSelector": {
