@@ -12,6 +12,7 @@
 		"mainNumber": "Numéro principal",
 		"callLogs": "Journal d'appels",
 		"quickLinks": "Aide",
+		"featureCodes": "Codes de fonction",
 		"__comment": "UI-1220: Added VMBox module",
 		"__version": "3.19",
 		"vmboxes": "Répondeurs"
@@ -666,13 +667,62 @@
 	},
 
 	"strategy": {
+		"addOfficeHours": {
+			"title": "Ajouter des heures de bureau",
+			"labels": {
+				"addHours": "Ajouter des heures",
+				"selectDays": "Sélectionnez un ou plusieurs jours de la semaine",
+				"officeStatus": "Statut du bureau",
+				"startTime": "Heure de début",
+				"endTime": "Heure de fin",
+				"lunchHours": "Heures du dîner (fermé)",
+				"openHours": "Heures d'ouverture"
+			},
+			"errors": {
+				"noDaysSelected": "Aucun jour n'a été sélectionné."
+			}
+		},
+		"addEditOfficeHolidays": {
+			"title": {
+				"add": "Ajouter un jour férié",
+				"edit": "Modifier les vacances"
+			},
+			"labels": {
+				"addHoliday": "Ajouter un jour férié",
+				"updateHoliday": "Mettre à jour les vacances",
+				"name": "Nom du jour férié",
+				"dateType": "Type de dates",
+				"date": "Date",
+				"recurringAnnually": "Récurrent annuellement",
+				"allDay": "Toute la journée",
+				"year": "An",
+				"time": "Temps"
+			},
+			"dateType": {
+				"singleDate": "Rendez-vous unique",
+				"dateRange": "Plage de dates",
+				"advancedDate": "Date avancée"
+			},
+			"placeholders": {
+				"name": "Nom du jour férié"
+			},
+			"errors": {
+				"noName": "Veuillez entrer un nom pour ce jour férié",
+				"minimum": "Le nom du jour férié doit comporter au moins 4 caractères",
+				"maximum": "Le nom du jour férié doit être limité à 60 caractères",
+				"nameExists": "Le nom du jour férié existe déjà. Veuillez spécifier un nom unique"
+			}
+		},
 		"noNumberHelp": "Note: Veuillez ajouter un numéro principal avant de passer à la suite. Une fois ce numéro rajouté, vous aurez la possibilité de configurer vos  Horaires d'Ouvertures, vos Vacances ainsi que la Gestion des Appels Entrants pour votre bureau.",
 		"sectionTitles": {
 			"numbers": "Numéro principal de l'entreprise",
 			"confnum": "Numéro principal de conférence",
 			"hours": "Horaires d'entreprise",
 			"holidays": "Jours fériés & Vacances",
-			"calls": "Gestion des appels entrants"
+			"calls": "Gestion des appels entrants",
+			"__comment": "UI-1210",
+			"__version": "3.22",
+			"faxingnum": "Numéro de la boîte de télécopie principale"
 		},
 		"noNumberTitle": "Ajouter numéro principal",
 		"noNumberMessage": "Veuillez ajouter un numéro principal pour continuer.",
@@ -688,6 +738,34 @@
 			"port": "Porter numéros"
 		},
 		"hours": {
+			"importOfficeHours": {
+				"title": "Heures d'ouverture du bureau d'importation"
+			},
+			"emptyState": {
+				"title": "Vos heures de bureau sont vides",
+				"text": "Commencez rapidement en remplissant vos heures de bureau à l'aide de l'un de nos modèles.",
+				"defaultOption": "Sélectionnez un modèle",
+				"nineToFiveWithNoonToOneLunchbreak": "Ouvert en semaine de 9h00 à 17h00. Fermé le midi du 12:00 to 1:00."
+			},
+			"days": {
+				"monday": "Lundi",
+				"tuesday": "Mardi",
+				"wednesday": "mercredi",
+				"thursday": "Jeudi",
+				"friday": "Vendredi",
+				"saturday": "Samedi",
+				"sunday": "Dimanche"
+			},
+			"allDays": "Tous les jours",
+			"to": "to",
+			"open": "Ouvrir",
+			"lunch": "Heures du dîner",
+			"addHours": "Ajouter des heures",
+			"importCsv": "Importer CSV",
+			"downloadCsv": "Télécharger CSV",
+			"info": "Info",
+			"infoOne": "Si un délai n'est pas répertorié dans le tableau ci-dessous, il est supposé que le bureau est fermé et suivra le chemin d'appel fermé.",
+			"infoTwo": "N'oubliez pas de définir le routage des appels lorsque votre bureau est fermé. Pour définir le routage des appels lorsque votre bureau est fermé, aller dans le “Traitement des appels entrants” section de cette page et sélectionnez la “Après des heures” languette. Pour définir le routage des appels pour les heures de déjeuner, sélectionnez le “Heures du dîner” languette.",
 			"alwaysOpenTitle": "Ouvert 24/24",
 			"alwaysOpenDescription": "Choisissez cette option si vous souhaitez gérer les appels entrants toujours de la même façon.",
 			"customHoursTitle": "Horaires personnalisés",
@@ -701,11 +779,75 @@
 		},
 		"holidays": {
 			"enableTitle": "Êtes-vous fermé pendant les vacances?",
+			"title": "Vacances",
+			"holidaySchedule": "Calendrier des vacances",
 			"addLink": "Ajouter vacances",
 			"singleLink": "Jour unique",
 			"rangeLink": "Période",
 			"advancedLink": "Avancé",
-			"helpHolidays": "N'oubliez pas de choisir votre route d'appel à utiliser quand votre bureau est fermé pour les vacances ! Pour la configurer, ouvrez la section \"Gestion des appels entrants\" de cette page, et sélectionnez l'onglet \"Vacances\" tab."
+			"helpHolidays": "N'oubliez pas de choisir votre route d'appel à utiliser quand votre bureau est fermé pour les vacances ! Pour la configurer, ouvrez la section \"Gestion des appels entrants\" de cette page, et sélectionnez l'onglet \"Vacances\" tab.",
+			"buttons": {
+				"addHoliday": "Ajouter un jour férié",
+				"importHolidays": "Importer des jours fériés",
+				"includeNationalHolidays": "Inclure les jours fériés nationaux"
+			},
+			"listing": {
+				"headers": {
+					"name": "Nom",
+					"date": "Date",
+					"actions": "Actions"
+				},
+				"search": "Search..."
+			},
+			"days": {
+				"monday": "Lun",
+				"tuesday": "Mar",
+				"wednesday": "Mer",
+				"thursday": "Jeu",
+				"friday": "Ven",
+				"saturday": "Sam",
+				"sunday": "Soleil"
+			},
+			"ordinals": {
+				"first": "Première",
+				"second": "Second",
+				"third": "Troisième",
+				"fourth": "Quatrième",
+				"fifth": "Cinquième",
+				"last": "Durer"
+			},
+			"months": {
+				"january": "Jan",
+				"february": "Fév",
+				"march": "Mar",
+				"april": "Avr",
+				"may": "Mai",
+				"june": "Juin",
+				"july": "Juil",
+				"august": "Août",
+				"september": "Sep",
+				"october": "Oct",
+				"november": "Nov",
+				"december": "Déc"
+			},
+			"to": "to",
+			"empty": {
+				"title": "Vos vacances au bureau sont vides",
+				"description": "Veuillez utiliser les boutons Ajouter un jour férié ou Importer des jours fériés pour entrer des jours fériés."
+			},
+			"importOfficeHolidays": {
+				"title": "Importer des jours fériés"
+			},
+			"importNationalOfficeHolidays": {
+				"title": "Sélectionnez les jours fériés nationaux",
+				"labels": {
+					"selectYourCountry": "Sélectionnez votre pays",
+					"description": "Sélectionnez les jours fériés lorsque votre bureau sera fermé",
+					"includeObservedDates": "Inclure les dates observées",
+					"selectHolidays": "Sélectionnez les jours fériés",
+					"holiday": "vacance"
+				}
+			}
 		},
 		"calls": {
 			"openHoursTitle": "Ouvert",
@@ -733,6 +875,8 @@
 			"ttsGreetingTitle": "Text to Speech",
 			"ttsGreetingPlaceholder": "Veuillez entrer votre message de bienvenue ici.",
 			"uploadGreetingTitle": "Uploader votre propre fichier",
+			"chooseExistingGreetingTitle": "Choisissez parmi les enregistrements existants",
+			"noExistingGreetings": "Vous n'avez pas encore enregistré de messages d'accueil. Téléchargez-en d'abord.",
 			"recordGreetingTitle": "Enregistrer depuis un téléphone",
 			"recordGreetingInfo": "Enregistrer vous même le message en suivant ces 4 étapes:",
 			"recordGreetingLines": {
@@ -835,9 +979,70 @@
 				}
 			}
 		},
+		"__comment": "UI-17142: ",
+		"__version": "3.22",
+		"noFaxingNumMessage": "Veuillez ajouter un numéro de fax principal.",
+		"__comment": "UI-1210: ",
+		"__version": "3.22",
 		"faxing": {
 			"nameExtension": "'s Faxbox",
-			"headerExtension": " Fax Printer"
+			"headerExtension": " Fax Printer",
+			"editFaxbox": "Modifier Faxbox"
+		},
+		"__comment": "UI-1774: Adding custom greetings to conference",
+		"__version": "3.22",
+		"customConferenceGreeting": {
+			"title": "Message d'accueil de conférence personnalisé",
+			"link": "Message d'accueil personnalisé",
+			"info": "Personnalisez votre message d'accueil de conférence à l'aide de notre fonction de synthèse vocale. Tapez simplement votre message d'accueil dans le champ de saisie ci-dessous.",
+			"mainConfMissing": "Votre conférence principale est introuvable.",
+			"tooltip": "Votre conférence principale a un message d'accueil personnalisé.",
+			"entity": "conférence"
+		},
+
+		"__comment": "UI-2499: Handle case where greeting has been deleted",
+		"__version": "4.0",
+		"greetingMissing": "Le message d'accueil qui a été configuré sur ce réceptionniste virtuel est manquant. Veuillez configurer un nouveau message d'accueil.",
+
+		"__comment": "",
+		"__version": "3.22",
+		"popupEditFaxbox": {
+			"titles": {
+				"create": "Créer principal Faxbox",
+				"edit": "Modifier principal Faxbox"
+			},
+			"text": "principal Faxbox",
+			"labels": {
+				"inbound": "E-mail de notification entrant"
+			}
+		},
+
+		"buttons": {
+			"reset": "Réinitialiser"
+		},
+
+		"updateCallerIdDialog": {
+			"title": {
+				"emergency": "Identification de l'appelant d'urgence du compte",
+				"external": "ID de l'appelant externe du compte"
+			},
+			"headerAddNumber": {
+				"emergency": "Vous venez d'activer le E911 sur l'un de vos numéros principaux, veuillez sélectionner le numéro que vous souhaitez utiliser pour votre identifiant d'appel d'urgence de compte."
+			},
+			"headerRemoveNumber": {
+				"emergency": "Vous avez désactivé E911 sur le numéro qui a été utilisé pour votre identifiant d'appel d'urgence, veuillez sélectionner un nouveau numéro à utiliser comme identifiant d'appel d'urgence de compte."
+			},
+			"headerChooseNumber": {
+				"emergency": "Vous n'avez pas encore défini le numéro d'urgence pour le compte, veuillez sélectionner le numéro que vous souhaitez utiliser pour l'identification de l'appelant d'urgence de votre compte.",
+				"external": "Vous n'avez pas encore défini de numéro externe pour le compte, veuillez sélectionner un nouveau numéro à utiliser comme ID d'appelant externe du compte."
+			},
+			"success": {
+				"emergency": "Vous avez mis à jour avec succès le E911 sur le compte à{{ number }}.",
+				"external": "Vous avez mis à jour avec succès l'ID de l'appelant externe sur le compte à {{ number }}."
+			},
+			"current": {
+				"emergency": "L'actuel"
+			}
 		}
 	},
 

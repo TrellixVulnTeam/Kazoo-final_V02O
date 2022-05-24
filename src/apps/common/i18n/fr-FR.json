@@ -333,5 +333,44 @@
 				"usedBy": "Elle correspond au téléphone nommé {{variable}}."
 			}
 		}
+	},
+	"__comment": "UI-2318: building common control for media selection",
+	"__version": "v4.0",
+	"mediaSelect": {
+		"defaultLabel": "Médias",
+		"emptyUploadAlert": "Téléchargement vide",
+		"fileTooBigAlert": "Fichier trop volumineux",
+		"invalidMedia": "Sélectionnez un média valide",
+		"shoutcastURL": "URL de flux",
+		"shoutcastURLHelp": "Vous pouvez taper n'importe quelle URL, y compris :// (http, https, shout...)",
+		"noneLabel": "- Rien -",
+		"silence": "Silence",
+		"shoutcastURLWarning": "AVERTISSEMENT : si le flux sélectionné ici tente d'être lu et n'est pas disponible, l'appel peut échouer complètement. Assurez-vous que le flux que vous utilisez est disponible 24h/24 et 7j/7.",
+		"useExistingMedia": "Utiliser les médias existants",
+		"uploadNewMedia": "Télécharger de nouveaux médias",
+		"textToSpeech": {
+			"tab": "Texte pour parler",
+			"info": "Personnalisez votre message d'accueil à l'aide de Text-to-Speech. Tapez le message d'accueil souhaité ci-dessous. Une fois vos modifications enregistrées, toute personne qui appelle cette {{entity}} sera accueillie par votre message personnalisé.",
+			"placeholder": "Tapez votre message d'accueil personnalisé…",
+			"errors": {
+				"create": "Erreur lors de la création d'un média de synthèse vocale",
+				"update": "Erreur lors de la mise à jour du texte vers le support vocal"
+			}
+		}
+	},
+	"csvUploader": {
+		"defaultTitle": "Importer un fichier CSV",
+		"uploadCsv": "Téléchargez votre fichier CSV à importer",
+		"uploadCsvStep": "1. Téléchargez votre fichier CSV à importer",
+		"downloadCsv": "2. Ou téléchargez un modèle CSV et entrez votre {{variable}} puis téléchargez",
+		"defaultData": "Les données",
+		"noFile": "Aucun fichier sélectionné...",
+		"chooseFile": "Choisir le fichier",
+		"defaultFilename": "modèle.csv",
+		"invalidFile": "Seuls les fichiers .csv sont acceptés",
+		"invalidRows": "Entrée invalide à la ligne(s){{list}}",
+		"andMore": "et plus",
+		"downloadTemplate": "Télécharger le modèle CSV",
+		"import": "Importer"
 	}
 }
