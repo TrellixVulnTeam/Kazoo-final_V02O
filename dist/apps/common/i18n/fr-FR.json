@@ -1,4 +1,178 @@
 {
+	"commonApp": {
+		"cidNumber": {
+			"selector": {
+				"none": "Aucun",
+				"addNumber": "Ajouter un nouvel identifiant d'appelant"
+			},
+			"add": {
+				"title": "Ajouter un numéro d'identification de l'appelant",
+				"text": "All Caller ID Numbers must be validated to comply with STIR/SHAKEN requirements. Once you submit a caller ID number, we'll call you to enter a verification code.",
+				"label": "Caller ID Number",
+				"errorVerify": "Couldn't verify number",
+				"buttons": {
+					"save": "Save and Verify Later",
+					"send": "Send Verification Code",
+					"verify": "Verify Without Code"
+				}
+			},
+			"verify": {
+				"title": "Verify Your Phone Number",
+				"text": "Please verify your phone number by entering the authorization code sent to {{variable}}Tous les numéros d'identification de l'appelant doivent être validés pour se conformer aux exigences STIR/SHAKEN. Une fois que vous aurez soumis un numéro d'identification de l'appelant, nous vous appellerons pour entrer un code de vérification..",
+				"help1": "La réception de votre code peut prendre une minute.",
+				"help2": "Vous ne l'avez pas reçu ?",
+				"resend": "Renvoyer un nouveau code",
+				"sent": "Expédié ({{duration}})",
+				"verifying": "Vérification",
+				"invalidPin": "Numéro d'identification non valide",
+				"numberVerified": "Numéro de téléphone vérifié"
+			}
+		},
+		"portWizard": {
+			"deleteButton": "Annuler",
+			"doneButton": "Soumettre une demande de port",
+			"steps": {
+				"nameAndNumbers": {
+					"label": "Nom + Nombres",
+					"description": "Nommez votre demande de transfert pour référence future et choisissez les numéros que vous souhaitez transférer.",
+					"title": "Nommez cette demande de port et indiquez les numéros que vous souhaitez transférer",
+					"portRequestName": {
+						"labels": {
+							"name": "Nom de la demande de port"
+						}
+					},
+					"numbersToPort": {
+						"title": "Numéros à mettre en communication",
+						"description": "Veuillez saisir ci-dessous les numéros que vous souhaitez transférer, en les séparant par une virgule. Veuillez noter que TOUS les numéros que vous souhaitez transférer DOIVENT provenir du même opérateur. Si les numéros que vous entrez ci-dessous ne proviennent pas du même transporteur, vous devrez soumettre une demande de transfert pour chaque transporteur à partir duquel vous souhaitez transférer.",
+						"labels": {
+							"file": "Télécharger le fichier .csv",
+							"numberType": "Type de numéro:",
+							"types": {
+								"local": "DID standard",
+								"tollFree": "Numéros sans frais"
+							}
+						},
+						"placeholders": {
+							"numbers": "Séparez les numéros individuels par une virgule"
+						},
+						"notices": {
+							"numbers": "<strong>Tous les numéros</strong> doit correspondre au type de numéro sélectionné et être formaté de la même manière."
+						},
+						"errors": {
+							"numbers": {
+								"phoneNumber": "Un ou plusieurs numéros sont invalides",
+								"multipleTypes": "Les numéros indiqués doivent inclure uniquement les types DID standard ou sans frais exclusivement",
+								"typeMismatch": "Les numéros répertoriés n'appartiennent pas au type de numéro sélectionné. Veuillez sélectionner le bon type de numéro ci-dessus."
+							}
+						},
+						"messages": {
+							"file": {
+								"allNumbers": "Fichier CSV lu. {{numbersCount}} numéros valides uniques extraits.",
+								"parseError": "Une erreur s'est produite lors de la tentative d'analyse du fichier. Vérifiez si le fichier existe et si les données sont correctement formatées.",
+								"noNumbers": "Fichier CSV lu. Cependant, aucun numéro valide n'a été trouvé, à partir de {{entriesCount}} entrées lues.",
+								"someNumbers": "Fichier CSV lu. {{entriesCount}} entrées lues, et {{numbersCount}} numéros valides uniques extraits."
+							}
+						}
+					}
+				},
+				"carrierSelection": {
+					"label": "Sélection du transporteur",
+					"description": "Passez en revue les numéros, sélectionnez un transporteur gagnant et déterminez les documents requis pour votre port.",
+					"multipleLosingCarriers": {
+						"title": "Oups! Quelque chose ne va pas avec les chiffres que vous avez fournis.",
+						"noticeAndDownload": {
+							"labels": {
+								"multipleLosingCarriersDescription": "Pour rationaliser votre expérience de portage, un fichier de sortie .csv a été généré pour chaque opérateur perdant répertorié ci-dessous. Vous devrez prendre chacun de ces fichiers .csv et soumettre une demande de port individuelle pour chaque opérateur perdant.",
+								"unsupportedCarrierDescription": "Pour rationaliser votre expérience de portage, un fichier de sortie .csv a été généré pour chaque opérateur perdant répertorié ci-dessous, afin que vous puissiez facilement consulter leurs numéros.",
+								"downloadFilesButton": "Tout télécharger {{variable}} Fichiers .csv"
+							},
+							"notices": {
+								"countryNotSupported": {
+									"title": "Pays non pris en charge",
+									"message": "Les numéros que vous souhaitez transférer appartiennent à un pays qui n'est actuellement pas pris en charge."
+								},
+								"multipleCountries": {
+									"title": "Plusieurs pays",
+									"message": "Les numéros que vous souhaitez porter doivent appartenir au même pays. Les numéros doivent également tous être portables vers le même opérateur gagnant."
+								},
+								"multipleLosingCarriers": {
+									"title": "Plusieurs transporteurs perdants",
+									"message": "Le transporteur perdant doit correspondre à chaque numéro que vous souhaitez transférer. Les numéros doivent également tous être transférables au même opérateur gagnant."
+								},
+								"noWinningCarriers": {
+									"title": "Aucun transporteur gagnant",
+									"message": "Les numéros doivent tous être portables sur le même opérateur gagnant."
+								},
+								"unknownLosingCarriers": {
+									"title": "Porteur perdant inconnu",
+									"message": "Le transporteur perdant doit être connu. Les numéros doivent également tous être transférables au même opérateur gagnant."
+								}
+							}
+						},
+						"losingCarriers": {
+							"title": "Perdre des transporteurs ({{variable}})",
+							"formats": {
+								"numberCount": "({{variable}} Nombres)"
+							}
+						},
+						"backButton": "Retour à la saisie des nombres"
+					},
+					"singleLosingCarrier": {
+						"title": "Veuillez vérifier les numéros sélectionnés et désigner un transporteur gagnant.",
+						"numbersToPort": {
+							"title": "Numéros à mettre en communication ({{variable}})",
+							"placeholders": {
+								"searchNumbers": "Rechercher des numéros"
+							}
+						},
+						"designateWinningCarrier": {
+							"title": "Désigner un transporteur gagnant",
+							"labels": {
+								"losingCarrier": "Perte de transporteur",
+								"winningCarrier": "Transporteur gagnant"
+							},
+							"help": {
+								"winningCarrier": "Sélectionnez un transporteur gagnant en fonction de la meilleure qualité, dans notre liste de transporteurs pris en charge"
+							},
+							"placeholders": {
+								"winningCarrier": "Sélectionnez en fonction de la meilleure qualité"
+							},
+							"messages": {
+								"carrierHasChanged": "Les informations sur le transporteur ont changé. Veuillez le vérifier avant de continuer."
+							}
+						},
+						"requiredDocuments": {
+							"title": "Documents requis",
+							"description": "Les documents suivants sont requis et doivent être correctement remplis pour que cette demande de port soit soumise."
+						}
+					}
+				},
+				"ownershipConfirmation": {
+					"label": "Confirmation de propriété",
+					"description": "Téléchargez et examinez votre facture la plus récente du transporteur perdant.",
+					"title": "Téléchargez une copie de votre facture la plus récente à partir de {{variable}} et vérifier quelques informations clés.",
+					"billUpload": {
+						"labels": {
+							"recentBill": "et vérifier quelques informations clés",
+							"acknowledgeBillDate": "Je reconnais que la date sur cette facture est dans les 30 derniers jours"
+						}
+					},
+					"accountOwnership": {
+						"labels": {
+							"carrier": "Transporteur",
+							"billName": "Nom du compte sur la facture"
+						},
+						"placeholders": {
+							"carrier": "Nom du transporteur",
+							"billName": "Nom du compte"
+						}
+					}
+				
+				}
+				
+			}
+		}
+	},
 	"accountBrowser": {
 		"missingInfo": "Information Manquante",
 		"addAccount": "Ajouter un compte",

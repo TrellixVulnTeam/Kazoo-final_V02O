@@ -20,11 +20,27 @@
 					<option value="{{this.id}}" {{#compare ../media '===' this.id}}selected{{/compare}}>{{this.name}}</option>
 				{{/each}}
 			</select>
-			<button type="button" class="monster-button monster-button-primary upload-toggle" data-toggle="button">
+		<!----	<div class="upload-div">-->
+				<input type="file" class="upload-input" accept="audio/*">
+				<div class="action-button">
+				<button type="button" class="monster-button monster-button-success upload-action upload-submit"><i class="fa fa-upload"></i></button>
+				<button type="button" class="monster-button monster-button-danger upload-action upload-cancel"><i class="fa fa-times"></i></button>
+				</div>
+				{{#if showMediaUploadDisclosure}}
+				<div>
+					<br>
+					{{#monsterPanelText i18n.mediaUploadDisclosure.title "info" "fill-width"}}
+						{{i18n.mediaUploadDisclosure.text}}
+					{{/monsterPanelText}}
+				</div>
+			{{/if}}
+		<!----	</div> -->
+<!----			<button type="button" class="monster-button monster-button-primary upload-toggle" data-toggle="button">
 				{{ i18n.upload }}
-			</button>
+			</button>-->
+			
 		</div>
-		<div class="upload-div">
+<!----		<div class="upload-div">
 			<input type="file" class="upload-input" accept="audio/*">
 			<button type="button" class="monster-button monster-button-success upload-action upload-submit"><i class="fa fa-upload"></i></button>
 			<button type="button" class="monster-button monster-button-danger upload-action upload-cancel"><i class="fa fa-times"></i></button>
@@ -37,6 +53,7 @@
 			</div>
 		{{/if}}
 		</div>
+	-->
 	</div>
 
 	<div class="actions clearfix">

@@ -162,6 +162,8 @@
 			"basicTitle": "Réglages",
 			"basicSectionTitle": "Réglages basiques",
 			"dragAndDrop": "Pour sélectionner un codec, glisser-déposer depuis la boite des codecs disponibles jusqu'à celle des codecs sélectionnés",
+			"noOwner": "- Aucun propriétaire -",
+			"saveAndApply": "Enregistrer et appliquer",
 			"options": {
 				"menuTitle": "Réglages"
 			},
@@ -414,7 +416,11 @@
 			"password": "Mot de passe",
 			"passwordPlaceholder": "(Min. 6 caractères)",
 			"title": "Mettre à jour Email / Mot de passe",
-			"username": "Email de l'utilisateur"
+			"username": "Email de l'utilisateur",
+			"resetPassword": {
+				"linkTitle": "ici",
+				"text": "Si vous voulez que le système envoie un e-mail à cet utilisateur avec des instructions sur la façon de réinitialiser son mot de passe, cliquez sur "
+			}
 		},
 		"dialogChangePin": {
 			"help": "Vous pouvez mettre à jour le PIN de messagerie d'utilisateur grâce à cette popup. Cela peut vous permettre de réinitialiser son PIN afin qu'il le re-configurer ensuite en appelant lui-même sa messagerie.",
@@ -769,7 +775,7 @@
 			"alwaysOpenTitle": "Ouvert 24/24",
 			"alwaysOpenDescription": "Choisissez cette option si vous souhaitez gérer les appels entrants toujours de la même façon.",
 			"customHoursTitle": "Horaires personnalisés",
-			"customHoursDescription": "Choisissez cette option si vous souhaitez gérer vos appels entrants differemment lorsque votre bureau est fermé",
+			"customHoursDescription": "Choisissez cette option si vous souhaitez gérer vos appels entrants différemment lorsque votre bureau est fermé.",
 			"listTitle": "Horaires",
 			"timezone": "Fuseau horaire:",
 			"to": "à",
@@ -797,7 +803,7 @@
 					"date": "Date",
 					"actions": "Actions"
 				},
-				"search": "Search..."
+				"search": "Recherche..."
 			},
 			"days": {
 				"monday": "Lun",

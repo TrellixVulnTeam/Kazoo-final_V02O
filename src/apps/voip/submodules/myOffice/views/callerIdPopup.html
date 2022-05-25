@@ -4,7 +4,7 @@
 			<div>
 				{{ i18n.myOffice.callerId.numberLabel }}
 				<select class="caller-id-select">
-					<option{{#compare selectedMainNumber "===" "none"}} selected{{/compare}} value="">None</option>
+					<option{{#compare selectedMainNumber "===" "none"}} selected{{/compare}} value="">Aucun</option>
 					{{#each mainNumbers}}
 						<option{{#compare ../selectedMainNumber "===" this.number}} selected{{/compare}} value="{{this.number}}">{{formatPhoneNumber this.number}}</option>
 					{{/each}}

@@ -934,3 +934,6 @@ div.btn-group.call-recording-type > button.monster-button.monster-button-fit.sel
 
 div.btn-group.call-recording-type > button.monster-button.monster-button-fit {
   border: none !important; }
+
+.voicemail-select .chosen-container.chosen-container-single > a.chosen-single, .user-select .chosen-container.chosen-container-single > a.chosen-single {
+  width: auto !important; }
