@@ -745,7 +745,7 @@
 		},
 		"hours": {
 			"importOfficeHours": {
-				"title": "Heures d'ouverture du bureau d'importation"
+				"title": "Heures d'ouverture du bureau"
 			},
 			"emptyState": {
 				"title": "Vos heures de bureau sont vides",
@@ -771,7 +771,7 @@
 			"downloadCsv": "Télécharger CSV",
 			"info": "Info",
 			"infoOne": "Si un délai n'est pas répertorié dans le tableau ci-dessous, il est supposé que le bureau est fermé et suivra le chemin d'appel fermé.",
-			"infoTwo": "N'oubliez pas de définir le routage des appels lorsque votre bureau est fermé. Pour définir le routage des appels lorsque votre bureau est fermé, aller dans le “Traitement des appels entrants” section de cette page et sélectionnez la “Après des heures” languette. Pour définir le routage des appels pour les heures de déjeuner, sélectionnez le “Heures du dîner” languette.",
+			"infoTwo": "N'oubliez pas de définir le routage des appels lorsque votre bureau est fermé. Pour définir le routage des appels lorsque votre bureau est fermé, aller dans le “Gestion des appels entrants” et sélectionnez le mode “Fermé”. Pour définir le routage des appels pour la pause de midi, sélectionnez le mode “Déjeuner”.",
 			"alwaysOpenTitle": "Ouvert 24/24",
 			"alwaysOpenDescription": "Choisissez cette option si vous souhaitez gérer les appels entrants toujours de la même façon.",
 			"customHoursTitle": "Horaires personnalisés",

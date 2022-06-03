@@ -169,7 +169,8 @@ define(function(require) {
 									var fullDay = wdays[date.getDay()],
 										day = _.upperCase(fullDay.charAt(0)) + fullDay.substr(1, 2);
 
-									dateToText = day + ' ' + fromMonth + ' ' + fromDay;
+								//	dateToText = day + ' ' + fromMonth + ' ' + fromDay;
+							    	dateToText = day + ' ' + fromDay + ' ' + fromMonth;
 									break;
 
 								case 'range':
