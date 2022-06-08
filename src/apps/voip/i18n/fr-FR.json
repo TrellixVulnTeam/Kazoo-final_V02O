@@ -1249,6 +1249,71 @@
 				"pinNumber": {
 					"label": "PIN Number"
 				}
+			},
+			"recipients": {
+				"menuTitle": "Destinataire",
+				"sectionTitle": "Destinataire",
+				"header": "Ce panneau vous permet de gérer qui sera averti lorsque quelqu'un laissera un message dans cette boîte vocale. Cliquez sur \"Ajouter un nouveau destinataire\" pour ajouter une adresse e-mail à la liste.",
+				"create": "Ajouter un nouveau destinataire"
+			},
+			"options": {
+				"menuTitle": "Choix",
+				"sectionTitle": "Choix",
+				"timezone": {
+					"label": "Fuseau horaire"
+				},
+				"unavailableMessage": {
+					"label": "Message indisponible"
+				},
+				"alreadySetup": {
+					"label": "Déjà configuré ?",
+					"help": "Cette boîte vocale est-elle déjà considérée comme initialisée ? Si ce n'est pas le cas, la première fois que l'utilisateur se connecte, il sera obligé de changer son code PIN et de configurer un message d'accueil."
+				},
+				"requirePIN": {
+					"label": "Code PIN obligatoire ?",
+					"help": "Vérifiez si la messagerie vocale nécessite un code PIN."
+				},
+				"autoLogin": {
+					"label": "Auto-Login activé ?",
+					"help": "Cocher pour activer la connexion automatique pour cette boîte vocale ? (Si l'utilisateur appelle sa propre messagerie vocale, il accède directement à ses messages)"
+				},
+				"skipGreetings": {
+					"label": "Ignorer message d'accueil ?",
+					"help": "Cochez pour ignorer les messages d'accueil par défaut"
+				},
+				"skipInstructions": {
+					"label": "Ignorer instructions ?",
+					"help": "Cochez pour ignorer les instructions par défaut"
+				},
+				"deleteAfterNotify": {
+					"label": "Supprime après notification ?",
+					"help": "Supprimer le message vocal après l'envoi de la notification"
+				},
+				"configurable": {
+					"label": "Configurable via Menu ?",
+					"help": " Si décoché, cela empêchera l'utilisateur de configurer la messagerie vocale via le menu"
+				},
+				"transcription": {
+					"label": "Transcrire les messages",
+					"help": "Si cette option est activée, une transcription de la messagerie vocale sera envoyée à l'adresse e-mail attribuée au compte et pourra être consultée dans l'application de bureau"
+				},
+				"announceOnly": {
+					"label": "Mode annonce uniquement",
+					"help": "Définir une boîte vocale en mode annonce uniquement"
+				},
+				"emailAsAttachment": {
+					"label": "Joindre message à 'e-mail",
+					"help": "E-mail n'ayant pas le message en pièce jointe"
+				},
+				"__comment": "UI-2634: add support for wav/mp4/mp3 for voicemail media extensions",
+				"__version": "4.1",
+				"mediaExtension": {
+					"label": "Extension média",
+					"mp3": "mp3",
+					"mp4": "mp4",
+					"wav": "wav",
+					"default": "Compte par défaut"
+				}
 			}
 }
 }

@@ -684,7 +684,7 @@
 			"recordGreetingTitle": "Enregistrer depuis un téléphone",
 			"recordGreetingInfo": "Enregistrer vous même le message en suivant ces 4 étapes:",
 			"recordGreetingLines": {
-				"line1": "Choisissez un téléphone enregistré sur ce ocmpte.",
+				"line1": "Choisissez un téléphone enregistré sur ce compte.",
 				"line2": "Appeler le numéro principal de l'entreprise.",
 				"line3": "Entrer ce PIN lorsque l'on vous le demandera:",
 				"line4": "Enregistrer votre messages! :)."
