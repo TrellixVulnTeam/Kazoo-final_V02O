@@ -49,6 +49,7 @@
 							{{ i18n.devices.popupSettings.video.menuTitle }}
 						</a>
 					</li>
+<!----
 					<li>
 						<a class="tabs-selector change-section" data-section="restrictions" href="javascript:void(0)">
 							<i class="fa fa-ban"></i>
@@ -63,6 +64,8 @@
 						</a>
 					</li>
 				{{/if}}
+				-->
+
 					<li>
 						<a class="tabs-selector change-section" data-section="miscellaneous" href="javascript:void(0)">
 							<i class="fa fa-cogs"></i>
@@ -173,7 +176,9 @@
 				<div class="items-selector codec-selector" id="video_codec_selector"></div>
 			</div>
 
-			<div class="tabs-section clearfix" data-section="restrictions">
+
+
+	<!----		<div class="tabs-section clearfix" data-section="restrictions">
 				<div class="restrictions-container">
 					<div class="restriction-matcher-div">
 						<i class="help-popover fa fa-question-circle fa-lg" data-original-title="{{i18n.devices.popupSettings.restrictions.matcher.help}}" data-placement="top" data-toggle="tooltip"></i>
@@ -211,7 +216,9 @@
 					{{/if}}
 				</div>
 			</div>
+		-->
 
+<!----
 			{{#if showEmergencyCallerId}}
 				<div class="tabs-section clearfix" data-section="callerId">
 					<div class="title">
@@ -236,6 +243,9 @@
 					{{/if}}
 				</div>
 			{{/if}}
+			-->
+
+
 
 			<div class="tabs-section clearfix" data-section="miscellaneous">
 				<div class="title">
@@ -251,14 +261,14 @@
 					</label>
 				</div>
 
-				<div class="control-group">
+		<!----		<div class="control-group">
 					<label class="control-label checkbox">
 						{{#monsterCheckbox i18n.devices.popupSettings.miscellaneous.unregisterNotifications.label }}
 							<input type="checkbox" name="extra.notify_unregister" id="notify_unregister" {{#unless suppress_unregister_notifications}}checked{{/unless}} />
 						{{/monsterCheckbox}}
 						<i class="help-popover fa fa-question-circle fa-lg" data-original-title="{{i18n.devices.popupSettings.miscellaneous.unregisterNotifications.help}}" data-placement="top" data-toggle="tooltip"></i>
 					</label>
-				</div>
+				</div> -->
 
 				<div class="control-group">
 					<label for="outbound_privacy" class="control-label checkbox">
@@ -277,7 +287,7 @@
 						</select>
 					</div>
 				</div>
-
+<!----
 				<div class="rtp-line clearfix">
 					<div class="control-group">
 						<label class="control-label checkbox">
@@ -296,6 +306,9 @@
 						</select>
 					</div>
 				</div>
+			-->
+
+
 
 				{{#if provision}}
 					<div class="control-group">

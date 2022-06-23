@@ -12,11 +12,26 @@
 		"mainNumber": "Numéro principal",
 		"callLogs": "Journal d'appels",
 		"quickLinks": "Aide",
-		"featureCodes": "Codes de fonction",
+		"featureCodes": "Codes de fonctions",
 		"__comment": "UI-1220: Added VMBox module",
 		"__version": "3.19",
 		"vmboxes": "Répondeurs"
 	},
+
+	"commonMisc": {
+		"outboundPrivacy": {
+			"label": "Numéro Masqué",
+			"tooltip": "Détermine ce qui apparaît comme Numéro Masqué pour les appels sortants hors réseau.",
+			"values": {
+				"default": "- Désactivé -",
+				"none": "Hide nothing",
+				"number": "Hide number only",
+				"name": "Activé",
+				"full": "Hide name and number"
+			}
+		}
+	},
+
 
 	"groups": {
 		"addFromSpare": "Ajouter depuis numéros disponibles",
@@ -414,6 +429,7 @@
 		"dialogChangePassword": {
 			"help": "Vous pouvez mettre à jour votre mot de passe en tapant votre Email et le nouveau mot de passe ci-dessus!",
 			"password": "Mot de passe",
+			"confirmPassword": "Retaper Mot de passe",
 			"passwordPlaceholder": "(Min. 6 caractères)",
 			"title": "Mettre à jour Email / Mot de passe",
 			"username": "Email de l'utilisateur",
@@ -423,7 +439,7 @@
 			}
 		},
 		"dialogChangePin": {
-			"help": "Vous pouvez mettre à jour le PIN de messagerie d'utilisateur grâce à cette popup. Cela peut vous permettre de réinitialiser son PIN afin qu'il le re-configurer ensuite en appelant lui-même sa messagerie.",
+			"help": "Vous pouvez utiliser cette fenètre pour dèfinir un code PIN temporaire pour un utilisateur qui a perdu son code PIN par exemple.",
 			"pin": "PIN",
 			"pinPlaceholder": "PIN (Min. 4 numéros)",
 			"title": "Mettre à jour le PIN de Messagerie"
@@ -521,7 +537,7 @@
 		"uploadPicture": "Uploader une image",
 		"user": "Utilisateur",
 		"call_forward": {
-			"failoverMode": "Mode de basculement",
+			"failoverMode": "Mode échec",
 			"directCallsOnly": "Seulement transférer les appels direct",
 			"headline": "Réglages du transfert d'appel",
 			"keepCallerId": "Garder le Caller-ID",
@@ -535,16 +551,37 @@
 			"timeoutWarning": "Afin de pouvoir laisser un message sur le répondeur du numéro transferé, la durée de sonnerie de l'utilisateur doit être d'au moins 30sec. En cliquant sur le bouton \"Sauvegarder\", vous serez automatiquement redirigé vers l'édition d'utilisateur où vous pourrez modifier la durée de sonnerie.",
 			"__comment": ": Now add a mode for failover for call forward",
 			"__version": "4.0",
-			"failoverWarning": "En \"Mode de basculement\", les paramètres de transfert d'appel ne s'appliqueront que si aucun des appareils de cet utilisateur n'est enregistré.",
+			"failoverWarning": "En \"Mode échec\", les paramètres de transfert d'appel ne s'appliqueront que si un des appareils de cet utilisateur est déconnecté.",
 			"failover_title": "Déviation d'appels (Failover Mode)"
 		},
 		"callRecording": {
-			"title": "Enregistrement d'appel entrant",
-			"headline": "Réglages de l'enregistrement d'appel",
+			"title": "Enregistrement d'appels",
+			"headline": "Réglages de l'enregistrement d'appels",
 			"formatLabel": "Format:",
 			"urlLabel": "URL:",
 			"urlPlaceholder": "http://votre.serveur.com/vos/enregistrements",
-			"timeLimitLabel": "Durée maximale (Sec):"
+			"timeLimitLabel": "Durée maximale (Sec):",
+			"toggleValues": {
+				"inboundOnnet": {
+					"title": "Entrants internes:",
+					"help": ""
+				},
+				"inboundOffnet": {
+					"title": "Entrants externes:",
+					"help": ""
+				},
+				"outboundOnnet": {
+					"title": "Sortants internes:",
+					"help": ""
+				},
+				"outboundOffnet": {
+					"title": "Sortants externes:",
+					"help": ""
+				},
+				"on": "On",
+				"accountDefault": "Account Default",
+				"off": "Off"
+			}
 		},
 		"call_recording": {
 			"title": "Enregistrement d'appel"
@@ -555,7 +592,8 @@
 			"number": "Numéro téléphonique de la conférence",
 			"pinLabel": "Salle de conférence",
 			"help": "Afin de joindre la conférence, transmettez le numéro téléphonique à appeler ainsi que le numéro de salle de conférence à tous les participants!",
-			"noConfNumbers": "Vous devez ajouter un Numéro principal de Conférence (Voir \"Numéro principal\" dans le menu de gauche) avant de pouvoir configurer les Conférences personnelles des utilisateurs"
+			"noConfNumbers": "Vous devez ajouter un Numéro principal de Conférence (Voir \"Numéro principal\" dans le menu de gauche) avant de pouvoir configurer les Conférences personnelles des utilisateurs",
+	        "enableVideoConferencing": "Activer la vidéo"
 		},
 		"faxing": {
 			"title": "Fax",
@@ -571,9 +609,9 @@
 			},
 			"emailToFax": {
 				"title": "Email to Fax",
-				"text1": "Les emails envoyés depuis",
-				"text2": "à",
-				"text3": " avec un pdf seront faxés au numéro spécifié dans le champ 'destinataire' de l'email.",
+				"text1": "Les emails envoyés depuis ",
+				"text2": " à ",
+				"text3": " avec un pdf seront faxés au numéro spécifié dans le champ 'destinataire' de l'email. ",
 				"default": "{ numéro de destination }",
 				"help": {
 					"showHelp": "Montrer l'aide",
@@ -764,8 +802,8 @@
 			},
 			"allDays": "Tous les jours",
 			"to": "to",
-			"open": "Ouvrir",
-			"lunch": "Heures du dîner",
+			"open": "Ouvert",
+			"lunch": "Déjeuner",
 			"addHours": "Ajouter des heures",
 			"importCsv": "Importer CSV",
 			"downloadCsv": "Télécharger CSV",
@@ -791,7 +829,7 @@
 			"singleLink": "Jour unique",
 			"rangeLink": "Période",
 			"advancedLink": "Avancé",
-			"helpHolidays": "N'oubliez pas de choisir votre route d'appel à utiliser quand votre bureau est fermé pour les vacances ! Pour la configurer, ouvrez la section \"Gestion des appels entrants\" de cette page, et sélectionnez l'onglet \"Vacances\" tab.",
+			"helpHolidays": "N'oubliez pas de choisir votre route d'appel à utiliser quand votre bureau est fermé pour les vacances ! Pour la configurer, ouvrez la section \"Gestion des appels entrants\" de cette page, et sélectionnez l'onglet \"Vacances\".",
 			"buttons": {
 				"addHoliday": "Ajouter un jour férié",
 				"importHolidays": "Importer des jours fériés",
@@ -1169,7 +1207,7 @@
 
 	"__comment": "UI-299, v3.19_s2: Added the Feature Codes tab to SmartPBX.",
 	"featureCodes": {
-		"title": "Codes d'appel disponibles",
+		"title": "Codes de Fonctions",
 		"noFeatureCodeMessage": "Aucun code d'appel n'est actuellement disponible sur votre compte. Les codes d'appel sont crées automatiquement lorsque vous chargez la page \"Numéro principal\".",
 		"mainNumberLink": "Aller à \"Numéro principal\"",
 		"labels": {
@@ -1247,7 +1285,7 @@
 					"label": "Numéro de messagerie vocale"
 				},
 				"pinNumber": {
-					"label": "PIN Number"
+					"label": "Code PIN"
 				}
 			},
 			"recipients": {
@@ -1256,9 +1294,22 @@
 				"header": "Ce panneau vous permet de gérer qui sera averti lorsque quelqu'un laissera un message dans cette boîte vocale. Cliquez sur \"Ajouter un nouveau destinataire\" pour ajouter une adresse e-mail à la liste.",
 				"create": "Ajouter un nouveau destinataire"
 			},
+			"greeting": {
+				"menuTitle": "Annonce Vocale",
+				"sectionTitle": "Annonce Vocale",
+				"dropdownLabel": "Annonce Principale:",
+				"noGreeting": "- None -",
+				"audioUploadButton": "Browse...",
+				"fileTooBigAlert": "Vous ne pouvez pas télécharger un fichier d'une taille supérieure à 5 Mo",
+				"emptyUploadAlert": "Veuillez sélectionner un fichier à télécharger",
+
+				"temporary": {
+					"label": "Annonce Temporaire:"
+				}
+			},
 			"options": {
-				"menuTitle": "Choix",
-				"sectionTitle": "Choix",
+				"menuTitle": "Options",
+				"sectionTitle": "Options",
 				"timezone": {
 					"label": "Fuseau horaire"
 				},
@@ -1286,7 +1337,7 @@
 					"help": "Cochez pour ignorer les instructions par défaut"
 				},
 				"deleteAfterNotify": {
-					"label": "Supprime après notification ?",
+					"label": "Supprimer ?",
 					"help": "Supprimer le message vocal après l'envoi de la notification"
 				},
 				"configurable": {
@@ -1302,7 +1353,7 @@
 					"help": "Définir une boîte vocale en mode annonce uniquement"
 				},
 				"emailAsAttachment": {
-					"label": "Joindre message à 'e-mail",
+					"label": "Joindre message à l'email",
 					"help": "E-mail n'ayant pas le message en pièce jointe"
 				},
 				"__comment": "UI-2634: add support for wav/mp4/mp3 for voicemail media extensions",

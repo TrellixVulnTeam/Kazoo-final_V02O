@@ -507,7 +507,10 @@ div.left-section-content.devices-section-content {
   margin: 15px 0px; }
 
 #file_upload_button_1 {
-  height: 50px; }
+  height: 54px;
+  width: 125px;
+  text-align: center;
+  padding: 0px 0px; }
 
 .action-button {
   float: right;

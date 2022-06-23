@@ -517,7 +517,7 @@
 		"invalidMedia": "Sélectionnez un média valide",
 		"shoutcastURL": "URL de flux",
 		"shoutcastURLHelp": "Vous pouvez taper n'importe quelle URL, y compris :// (http, https, shout...)",
-		"noneLabel": "- Rien -",
+		"noneLabel": "Aucun",
 		"silence": "Silence",
 		"shoutcastURLWarning": "AVERTISSEMENT : si le flux sélectionné ici tente d'être lu et n'est pas disponible, l'appel peut échouer complètement. Assurez-vous que le flux que vous utilisez est disponible 24h/24 et 7j/7.",
 		"useExistingMedia": "Utiliser les médias existants",

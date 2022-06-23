@@ -609,5 +609,73 @@
 		"fr-FR": "Français (fr-FR)",
 		"nl-NL": "Néerlandais (nl-NL)",
 		"ru-RU": "Russe (ru-RU)"
+	},
+
+	"__comment": "UI-243: Adding a password strength control",
+	"__version": "v3.20_s4",
+	"passwordStrength": {
+		"strong": "Forte",
+		"good": "Bien",
+		"medium": "D'accord",
+		"weak": "Faible",
+		"bad": "Mal",
+		"empty": "Entrer mot de passe"
+	},
+
+	"validation": {
+		"defaultRules": {
+			"required": "Ce champ est requis.",
+			"remote": "Veuillez corriger ce champ.",
+			"email": {
+				"one": "S'il vous plaît, mettez une adresse email valide.",
+				"other": "Veuillez saisir des adresses e-mail valides séparées par des espaces."
+			},
+			"url": "Veuillez entrer une URL valide.",
+			"date": "veuillez entrer une date valide.",
+			"dateISO": "Veuillez entrer une date valide (ISO).",
+			"number": "S'il vous plait, entrez un nombre valide.",
+			"digits": "Merci de n'entrer que des chiffres.",
+			"creditcard": "Veuillez saisir un numéro de carte de crédit valide.",
+			"equalTo": "Entrez à nouveau la même valeur s'il vous plait.",
+			"maxlength": "Veuillez entrer pas plus de {0} personnages.",
+			"minlength": "Veuillez entrer au moins {0} personnages.",
+			"rangelength": "Veuillez entrer une valeur entre {0} et {1} Longs caractères.",
+			"range": "Veuillez entrer une valeur entre {0} et {1}.",
+			"max": "Veuillez entrer une valeur inférieure ou égale à {0}.",
+			"min": "Veuillez saisir une valeur supérieure ou égale à {0}."
+		},
+		"customRules": {
+			"listOf": "Veuillez entrer des éléments valides séparés par des espaces.",
+			"lowerThan": "Doit être inférieur au maximum",
+			"greaterThan": "Doit être supérieur au minimum",
+			"phoneNumber": "s'il vous plaît entrer un numéro de téléphone valide",
+			"hexadecimal": "Veuillez n'entrer que des chiffres hexadécimaux",
+			"checkList": "Existe déjà",
+			"mac": "Veuillez entrer une adresse MAC valide.",
+			"ipv4": "Veuillez entrer une adresse IP v4 valide.",
+			"time12h": "Veuillez saisir une heure valide au format 12 heures AM/PM.",
+			"greaterDate": "L'heure de début doit être antérieure à l'heure de fin.",
+			"realm": "Veuillez saisir des caractères alphanumériques minuscules, point ou tiret uniquement.",
+			"__comment": "UI-1335: Adding validation rule for 24-hour date format",
+			"__version": "v3.20_s3",
+			"time24h": "Veuillez entrer une heure valide au format 24 heures.",
+			"__comment": "UI-2654: add protocol rule",
+			"__version": "v4.1",
+			"protocol": "Veuillez inclure le \"://\" characters.",
+			"protocols": "Ne prend en charge que: {{suite}}",
+			"notEqualTo": "La valeur doit être unique."
+		},
+		"required": "Obligatoire."
+	},
+	"warning": "Warning!",
+	"confirmCharges": {
+		"title": "Confirmation des frais",
+		"oneTimeFee": "Frais uniques",
+		"detail": "Voici les détails mis à jour des frais mensuels qui seront portés à votre compte pour ce service:",
+		"rate": "Évaluer",
+		"quantity": "Quantité",
+		"discount": "Remise",
+		"monthlyCharges": "Frais mensuels"
 	}
+
 }
