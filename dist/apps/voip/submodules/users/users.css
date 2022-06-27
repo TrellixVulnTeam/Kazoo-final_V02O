@@ -940,3 +940,7 @@ div.btn-group.call-recording-type > button.monster-button.monster-button-fit {
 
 .monster-button.monster-button-success.save-new-pin {
   padding: 10px 15px 10px 15px; }
+
+.monster-feature-popup-container[data-feature="call_forward"] {
+  width: auto;
+  max-width: 950px; }

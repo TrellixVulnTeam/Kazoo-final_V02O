@@ -712,9 +712,9 @@ div.edit-features .navbar .nav.pull-right li ul li > a.rename-carrier-number{
 div.edit-features .navbar .nav.pull-right li ul li > a.sync-number{
     display: none;
 }
-#groups_container .detail-numbers .list-wrapper .features-block .features > i.feature-local.monster-purple.fa.fa-rocket.monster-tooltip-loaded {
-    display: none;
-}
 .monster-feature-popup-container select > option[value="wav"]{
 	display: none;
+}
+#groups_container .detail-numbers .list-wrapper .features-block .features {
+    display: none;
 }
