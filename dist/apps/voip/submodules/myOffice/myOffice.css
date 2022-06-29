@@ -521,3 +521,9 @@ div.left-section-content.devices-section-content {
   min-width: 60px;
   margin: 0px 3px;
   height: 50px; }
+
+#my_office_music_on_hold_popup .content div > .file-upload {
+  margin-top: 20px; }
+
+#my_office_music_on_hold_popup .content div .file-upload > button {
+  height: 50px; }
