@@ -175,7 +175,7 @@
 
 /* Adding / Edition vmboxes Popups */
 .edit-vmbox .actions {
-	border-top: 1px solid #CCCCCC;
+/*	border-top: 1px solid #CCCCCC;*/
 	height: 30px;
 	line-height: 30px;
 	padding: 15px;
@@ -252,7 +252,7 @@
 
 .edit-vmbox .tabs-section[data-section="greeting"] .greeting-container,
 .edit-vmbox .tabs-section[data-section="greeting"] .temporary-greeting-container {
-	padding: 0 90px 25px
+	padding: 0 60px 30px
 }
 .edit-vmbox .tabs-section[data-section="greeting"] .greeting-container .media-dropdown {
 	margin-bottom: 0px;
@@ -289,4 +289,25 @@
 	margin: 0;
 	padding: 6px;
 	width: 140px;
+}
+div.edit-vmbox .actions .pull-right > .cancel-link{
+	min-width: 120px;
+    padding: 10px 30px 12px 30px;
+    background-color: #dae1e8;
+    color: #333 !important;
+    letter-spacing: .02em;
+    font-size: 15px;
+}
+div.edit-vmbox .actions > #delete_vmbox{
+	font-size: 15px;
+    min-width: 120px;
+    padding: 12px 30px;
+    letter-spacing: .02em;
+    color: #fff !important;
+    border-radius: 2px;
+    background: #ec1a57;
+    cursor: pointer;
+}
+div.edit-vmbox .actions #delete_vmbox > i{
+    color: #fff !important;
 }

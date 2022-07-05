@@ -1,0 +1,66 @@
+{
+	"voicemails": {
+		"title": "Gestionnaire de messagerie vocale",
+		"menuTitles": {
+			"receivedVMs": "Messages vocaux reçus",
+			"storage": "Stockage"
+		},
+		"receivedVMs": {
+			"filterByDate": "Filtrer par dates",
+			"table": {
+				"columns": {
+					"status": "Statut",
+					"callId": "ID d'appel",
+					"received": "Reçu",
+					"from": "De",
+					"targetNumber": "Nombre cible",
+					"duration": "Durée",
+					"name": "Nom"
+				},
+				"emptyRow": "Aucun message n'est enregistré dans la boîte vocale sélectionnée"
+			},
+			"empty": {
+				"headline1": "Il y a",
+				"headline2": "boîtes vocales reconnues sur ce compte",
+				"subHeadline": "Sélectionnez une boîte pour gérer les messages vocaux qu'elle contient."
+			},
+			"actionBar": {
+				"select": {
+					"all": "Tout sur la page",
+					"new": "Nouveau",
+					"listened": "écouté",
+					"deleted": "Supprimé",
+					"none": "Aucun"
+				},
+				"selectVM": {
+					"none": "Sélectionnez une boîte vocale"
+				},
+				"from": "De",
+				"to": "À",
+				"markAsNew": "Marquer comme nouveau",
+				"markAsListened": "Marquer comme écouté",
+				"markAsDeleted": "Marquer comme supprimé",
+				"tooltips": {
+					"markAs": "Marquer comme",
+					"refresh": "Rafraîchir",
+					"select": "Sélectionner",
+					"moveTo": "Déménager à",
+					"delete": "Cela supprimera les messages vocaux sélectionnés de la base de données et ils ne pourront plus être récupérés par la suite."
+				},
+				"delete": "Effacer",
+				"currentlyViewing": "Affichage en cours",
+				"new": "Nouveau:",
+				"total": "Totale:"
+			},
+			"status": {
+				"saved": "écouté",
+				"deleted": "Supprimé",
+				"new": "Nouveau"
+			},
+			"noCDR": "Nous n'avons pas trouvé de CDR correspondant à ce message. Il est possible que les journaux aient été supprimés du système s'il s'agit d'un ancien message.",
+			"CDRPopup": {
+				"title": "Détails du REC"
+			}
+		}
+	}
+}

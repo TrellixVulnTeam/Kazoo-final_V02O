@@ -453,7 +453,7 @@
 	width: 330px;
 }
 #my_office_music_on_hold_popup .upload-div button.upload-action {
-	margin-left: 10px;
+	margin-left: 2px;
 	min-width: 20px;
 	padding-right: 10px;
 }
@@ -466,7 +466,7 @@
 	padding: 6px;
 }
 #my_office_music_on_hold_popup .upload-div .file-upload > button {
-	width: 120px;
+	width: auto;
 }
 
 #myoffice_container .warning-pulse-box {
@@ -491,4 +491,30 @@
 }
 div.left-section-content.devices-section-content{
 	padding: 10px 10px 0px 20px;
+}
+#file_upload_wrapper_1{
+	margin: 15px 0px;
+}
+#file_upload_button_1{
+	height: 54px;
+    width: 125px;
+    text-align: center;
+    padding: 0px 0px;
+}
+.action-button{
+	float: right;
+    margin: 5px 10px 20px 0px;
+}
+.action-button > .monster-button{
+	padding: 15px 0px;
+    min-width: 60px;
+    margin: 0px 3px;
+    height: 50px;
+}
+
+#my_office_music_on_hold_popup .content div > .file-upload{
+	margin-top: 20px;
+}
+#my_office_music_on_hold_popup .content div .file-upload > button{
+	height: 50px;
 }

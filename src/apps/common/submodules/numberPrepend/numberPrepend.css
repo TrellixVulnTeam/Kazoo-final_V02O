@@ -8,12 +8,19 @@
 	margin: 0;
 }
 
+.trunkstore_popup.number-prepend form .popup-content > input {
+	margin: 0;
+	height: 30px;
+    width: 250px;
+    box-shadow: 0 0 4pt 0pt #d3d3d3;
+}
+
 .trunkstore_popup.number-prepend .popup-content {
 	padding: 15px 25px;
 }
 
 .trunkstore_popup.number-prepend .popup-content:not(:first-child) {
-	border-top: 1px solid #ccc;
+/*	border-top: 1px solid #ccc; */
 }
 
 .trunkstore_popup.number-prepend .popup-content .popup-label {
@@ -27,4 +34,10 @@
 
 .trunkstore_popup.number-prepend .popup-actions .cancel-link {
 	margin-right: 10px;
+	min-width: 120px;
+    padding: 10px 30px 12px 30px;
+    background-color: #dae1e8;
+    color: #333 !important;
+    letter-spacing: .02em;
+    font-size: 15px;
 }

@@ -793,11 +793,23 @@ div.user-cells > .name.grid-cell{
 	padding: 15px 25px;
 	border-top: 1px solid #CCCCCC;
 }
-
+.smart-edit-popup .actions {
+	padding: 15px 25px;
+	border-top: none;
+}
 .smart-edit-popup .actions .cancel-link {
 	margin-right: 10px;
+	min-width: 120px;
+    padding: 10px 30px 12px 30px;
+    background-color: #dae1e8;
+    color: #333 !important;
+    letter-spacing: .02em;
+    font-size: 15px;
 }
-
+.smart-edit-popup .actions .pull-right > button.monster-button.monster-button-success.save-new-username{
+	min-width: 120px !important;
+    padding: 10px 30px 12px 30px !important;
+}
 /********* CSS for device popovers (appended directly on the body) *********/
 .device-popover-icon {
 	margin-right: 10px;
@@ -840,6 +852,16 @@ div.user-cells > .name.grid-cell{
 .presence-id-change-wrapper .actions {
 	margin-top: 10px;
 }
+.monster-feature-popup-container[data-feature="call_forward"] .btn-group > button.monster-button.monster-button-fit.monster-button-primary.selected{
+background-color: #22a5ff;
+color: #fff;
+border-radius: 5px;
+
+}
+.monster-feature-popup-container[data-feature="call_forward"] .btn-group > button.monster-button.monster-button-fit{
+border: none;
+	
+	}
 
 .monster-feature-popup-container {
 	.feature-popup-title {
@@ -872,10 +894,11 @@ div.user-cells > .name.grid-cell{
 	}
 
 	&[data-feature="call_forward"] {
-		width: 600px;
+		width: auto;
 
 		.btn-group {
 			font-size: 14px;
+			border: 1px solid #CCC;
 		}
 
 		.failover-info {
@@ -1030,7 +1053,7 @@ div.user-cells > .name.grid-cell{
 			margin-bottom: 0px;
 		}
 		.upload-toggle {
-			margin-left: 10px;
+			margin-top: 10px;
 			min-width: 117px;
 		}
 		.upload-div {
@@ -1105,9 +1128,9 @@ div.user-cells > .name.grid-cell{
 		}
 	}
 }
-//#outbound_privacy > option[value=name]{
-//	display:none;
-//	}
+#outbound_privacy > option[value=none],#outbound_privacy > option[value=number],#outbound_privacy > option[value=full]{
+	display:none;
+	}
 	.input-small{
 		width:180px;
 		height: 30px !important;
@@ -1179,4 +1202,26 @@ div.user-cells > .name.grid-cell{
 	}
 	.add-device.monster-link.dropdown-toggle > i{
 		color: #fff !important;
+	}
+/*	.ui-dialog .ui-dialog-content{
+		overflow: inherit !important;
+	}*/
+
+	div.btn-group.call-recording-type > button.monster-button.monster-button-fit.selected.monster-button-primary{
+		background-color: #22a5ff;
+        color: #fff;
+        border-radius: 5px;
+	}
+	div.btn-group.call-recording-type > button.monster-button.monster-button-fit{
+	border: none !important;
+	}
+	.voicemail-select .chosen-container.chosen-container-single > a.chosen-single ,	.user-select .chosen-container.chosen-container-single > a.chosen-single {
+		width:auto !important;
+	} 
+	.monster-button.monster-button-success.save-new-pin{
+		padding: 10px 15px 10px 15px;
+	}
+	.monster-feature-popup-container[data-feature="call_forward"] {
+		width: auto;
+		max-width:950px;
 	}

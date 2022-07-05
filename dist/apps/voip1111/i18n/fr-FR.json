@@ -639,7 +639,7 @@
 			"alwaysOpenTitle": "Ouvert 24/24",
 			"alwaysOpenDescription": "Choisissez cette option si vous souhaitez gérer les appels entrants toujours de la même façon.",
 			"customHoursTitle": "Horaires personnalisés",
-			"customHoursDescription": "Choisissez cette option si vous souhaitez gérer vos appels entrants differemment lorsque votre bureau est fermé",
+			"customHoursDescription": "Choisissez cette option si vous souhaitez gérer vos appels entrants différemment lorsque votre bureau est fermé.",
 			"listTitle": "Horaires",
 			"timezone": "Fuseau horaire:",
 			"to": "à",
@@ -684,7 +684,7 @@
 			"recordGreetingTitle": "Enregistrer depuis un téléphone",
 			"recordGreetingInfo": "Enregistrer vous même le message en suivant ces 4 étapes:",
 			"recordGreetingLines": {
-				"line1": "Choisissez un téléphone enregistré sur ce ocmpte.",
+				"line1": "Choisissez un téléphone enregistré sur ce compte.",
 				"line2": "Appeler le numéro principal de l'entreprise.",
 				"line3": "Entrer ce PIN lorsque l'on vous le demandera:",
 				"line4": "Enregistrer votre messages! :)."

@@ -1,0 +1,95 @@
+{
+	"fax": {
+		"title": "Portail de télécopie",
+		"menuTitles": {
+			"inbound": "Télécopies entrantes",
+			"outbound": "Télécopies sortantes",
+			"logs": "Journaux e-mail vers fax",
+			"storage": "Stockage"
+		},
+		"table": {
+			"columns": {
+				"status": "Statut",
+				"sent": "Date",
+				"sendingFaxbox": "Boîte de télécopie d'envoi",
+				"sendingNumber": "Numéro d'envoi",
+				"received": "Reçu",
+				"receivingFaxbox": "Boîte de réception de fax",
+				"receivingNumber": "Numéro de réception",
+				"pages": "pages",
+				"from": "De"
+			},
+			"emptyRow": "Il n'y a pas de fax répertoriés sous cette boîte de fax",
+			"status": {
+				"success": "Succès",
+				"processing": "Traitement",
+				"failed": "Manqué",
+				"pending": "En attente",
+				"completed": "Complété"
+			},
+			"noData": "N/A"
+		},
+		"empty": {
+			"headline1": "Il y a",
+			"headline2": "faxbox reconnus sur ce compte",
+			"subHeadlineInbound": "Sélectionnez une boîte pour gérer les fax entrants qu'elle contient.",
+			"subHeadlineOutbound": "Sélectionnez une boîte pour gérer les télécopies sortantes qu'elle a envoyées."
+		},
+		"actionBar": {
+			"refresh": "Rafraîchir",
+			"select": {
+				"all": "Tout sur la page",
+				"failed": "Manqué",
+				"completed": "Complété",
+				"none": "Aucun"
+			},
+			"selectFaxbox": {
+				"none": "Sélectionnez une boîte de télécopie"
+			},
+			"from": "De",
+			"to": "À",
+			"markAsNew": "Marquer comme nouveau",
+			"tooltips": {
+				"refresh": "Rafraîchir",
+				"select": "Sélectionner",
+				"resend": "Renvoyer",
+				"delete": "Effacer"
+			},
+			"currentlyViewing": "Affichage en cours",
+			"filterByDate": "Filtrer par dates"
+		},
+		"CDRPopup": {
+			"title": "Détails de télécopie"
+		},
+		"deleteConfirm": {
+			"content": "Suppression de la {{variable}} les télécopies sélectionnées les supprimeront définitivement du système. Cette action ne peut pas être annulée ou inversée, et les fichiers concernés disparaîtront à jamais.",
+			"title": "Êtes-vous sûr?",
+			"confirmButtonText": "Supprimer les fichiers sélectionnés",
+			"success": "Vous avez supprimé avec succès les fax sélectionnés du système !"
+		},
+		"resendConfirm": {
+			"content": "Vous tentez de renvoyer {{variable}} télécopies. Voulez-vous vraiment tenter une nouvelle livraison ?",
+			"confirmButtonText": "Renvoyer des fax",
+			"title": "Êtes-vous sûr?",
+			"success": "Vous avez essayé avec succès de renvoyer les fax sélectionnés !"
+		},
+
+
+		"logs": {
+			"tableTitles": {
+				"from": "De",
+				"to": "À",
+				"date": "Date",
+				"details": "Détails",
+				"status": "Statut"
+			},
+			"detailDialog": {
+				"popupTitle": "Détails techniques",
+				"metadataTitle": "Métadonnées",
+				"errorTitle": "Les erreurs)",
+				"apiKeys": {
+				}
+			}
+		}
+	}
+}

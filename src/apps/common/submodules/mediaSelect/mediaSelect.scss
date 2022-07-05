@@ -103,3 +103,6 @@
 		}
 	}
 }
+.monster-media-selection.monster-media-tabs-skin [data-tab="use_existing"] #select_media_form .control-group .controls select > option[value="shoutcast"]{
+display: none;
+}

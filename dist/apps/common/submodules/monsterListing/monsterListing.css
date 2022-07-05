@@ -5,13 +5,12 @@
   padding: 15px; }
 
 .monster-listing-container .monster-listing-grid .grid-title {
-  border-radius: 4px 4px 0 0;
-  background: #f0f0f9;
-  color: #303039;
+  background: #f0f1f3;
+  color: #333;
   line-height: 30px;
-  padding: 10px;
+  padding: 20px 10px;
   min-width: 600px;
-  border: solid 2px #e0e0e9;
+  border: solid 1px #e2e5e8;
   border-bottom: none; }
 
 .monster-listing-container .monster-listing-grid {
@@ -27,31 +26,12 @@
   height: 50px;
   padding: 5px 10px;
   cursor: pointer;
-  background: #f9f9f9;
-  border: 1px solid #e0e0e9; }
-
-.monster-listing-container .monster-listing-grid .grid-content .monster-listing-box:hover {
-  background: #f0f0f0;
-  /* Old browsers */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #f9f9f9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f0f0f0 0%, #f9f9f9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #f0f0f0 0%, #f9f9f9 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #f0f0f0 0%, #f9f9f9 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #f0f0f0 0%, #f9f9f9 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #f0f0f0 0%, #f9f9f9 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9',GradientType=0 );
-  /* IE6-9 */ }
+  background: #f8f8f9;
+  border: 1px solid #fff; }
 
 .monster-listing-container .monster-listing-grid .grid-content .monster-listing-box.selected {
   font-weight: 600;
-  border-top: 1px solid #2297FF !important;
-  background: #f0f0f9; }
+  border-top: 1px solid #0b559f !important; }
 
 .monster-listing-container .monster-listing-grid .grid-content .monster-listing-box.no-data:hover {
   cursor: default;
@@ -95,3 +75,11 @@
 
 .monster-listing-container .monster-listing-numbers .monster-listing-box .features i.active {
   display: inline-block; }
+
+.dialog-buttons-wrapper .monster-button.cancel {
+  background-color: #dae1e8 !important;
+  color: #333 !important; }
+
+.dialog-buttons-wrapper .monster-button-primary.proceed {
+  background-color: #3ebb91 !important;
+  color: #fff !important; }
